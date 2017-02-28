@@ -1,0 +1,48 @@
+body {
+    background-color: #f5f6f3;
+    height: 1024px;
+    font: 14px "Myriad Pro";
+}
+
+hr {
+    width: 830px;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 830px;
+}
+
+h1 {
+    text-align: center;
+    font: bold 36px "Arial";
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border: 1px solid #7f7f7f;
+    width: 200px;
+    height: 200px;
+}
+
+p {
+    padding-left: 40px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.p-arial {
+    font-family: Arial;
+    padding-left: 0px;
+}
+
+a {
+    font-style: italic;
+}
+
+
+
