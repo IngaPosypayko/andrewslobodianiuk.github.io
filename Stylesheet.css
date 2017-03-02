@@ -4,10 +4,6 @@ body {
     font: 14px "Myriad Pro";
 }
 
-hr {
-    width: 830px;
-}
-
 .wrapper{
     margin: 0 auto;
     width: 830px;
@@ -42,6 +38,10 @@ h2 {
 
 a {
     font-style: italic;
+}
+
+.line {
+    border-bottom: 1px solid gray;
 }
 
 
