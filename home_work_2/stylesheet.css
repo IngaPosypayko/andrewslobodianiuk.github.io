@@ -1,0 +1,155 @@
+body {
+    background-color:#f9f9f9;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1060px;
+    height: 950px;
+    background-color: white;
+    box-shadow: 0 0 15px silver;
+}
+
+header img {
+    padding: 50px 0px 40px 45px;
+    margin: 0px;
+}
+
+nav {
+    margin-left: 40px;
+    width: 965px;
+    height: 40px;
+    background: linear-gradient(to bottom, #5d5d5d, #454444);
+}
+
+nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 0px;
+    letter-spacing:-1px;
+}
+
+nav li {
+    display: inline-block;
+    text-shadow: 0 0 1px grey;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    letter-spacing:normal;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font: 14px 'Open Sans';
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background: linear-gradient(to bottom, #4a4a4a, #2e2e2e);
+    border-right: 1px solid #838383;
+    border-left: 1px solid #838383;
+}
+
+aside {
+    margin: 40px 0 0 40px;
+    float: left;
+}
+
+aside ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border: 1px solid #c8c8c8;
+}
+
+aside li {
+    height: 38px;
+    width: 238px;
+    border-bottom: 1px solid #c8c8c8;
+}
+
+aside a {
+    padding: 10px;
+    text-decoration: none;
+    color: #656363;
+    font: 13px 'Open Sans';
+    display: block;
+}
+
+aside a:hover {
+    background-color: #f9f9f9;
+    padding-left: 35px;
+    color: black;
+}
+
+.none_border {
+    border-bottom: none;
+}
+
+article {
+    width: 680px;
+    height: 568px;
+    margin: 40px 0px 60px 325px;
+}
+
+article img {
+    padding: 40px 0 0 105px;
+}
+
+.img_border {
+    height: 400px;
+    border: 1px solid #c8c8c8;
+}
+
+article p {
+    font: 13px 'Open Sans';
+    padding: 40px 0 0 30px;
+    margin: 0;
+}
+
+footer {
+    margin: 40px;
+    width: 965px;
+    height: 40px;
+    background-color: #e1e1e1;
+}
+
+footer ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 0px;
+    letter-spacing:-1px;
+}
+
+footer li {
+    padding: 10px 25px 0 20px;
+    display: inline-block;
+    letter-spacing:normal;
+    width: 100px;
+    height: 40px;
+    font: 13px 'Open Sans';
+    color: #2c2c2c;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer_since {
+    margin-left: 190px;
+    padding-right: 0px;
+    width: auto;
+}
+
+
+
