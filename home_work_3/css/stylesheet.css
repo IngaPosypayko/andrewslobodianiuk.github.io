@@ -5,19 +5,18 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    width: 1060px;
-    height: 950px;
+    padding: 0 40px 60px 40px;
+    width: 965px;
     background-color: white;
     box-shadow: 0 0 15px silver;
 }
 
 header img {
-    padding: 50px 0px 40px 45px;
-    margin: 0px;
+    margin: 50px 0px 40px 45px;
 }
 
+
 nav {
-    margin-left: 40px;
     width: 965px;
     height: 40px;
     background: linear-gradient(to bottom, #5d5d5d, #454444);
@@ -55,7 +54,7 @@ nav a:hover {
 }
 
 aside {
-    margin: 40px 0 0 40px;
+    margin: 40px 0 0 0;
     float: left;
 }
 
@@ -93,7 +92,7 @@ aside a:hover {
 article {
     width: 680px;
     height: 568px;
-    margin: 40px 0px 60px 325px;
+    margin: 40px 0px 60px 285px;
 }
 
 article img {
@@ -112,7 +111,6 @@ article p {
 }
 
 footer {
-    margin: 40px;
     width: 965px;
     height: 40px;
     background-color: #e1e1e1;
