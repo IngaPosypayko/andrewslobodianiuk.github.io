@@ -1,10 +1,25 @@
-body {
-    background-color: black;
+.wrapper {
+    background-image: url("../img/background.png");
+    font-family: Tahoma, sans-serif, Serif;
 }
 
 
-.wrapper {
+.content {
     width: 1000px;
+    height: 1023px;
     margin: 0 auto;
     background-color: white;
+}
+
+.logo {
+    margin: 0 0 0 50px;
+    height: 189px;
+    width: 500px;
+    background: url("../img/logo.png") no-repeat white;
+
+}
+
+.banner {
+
+
 }
