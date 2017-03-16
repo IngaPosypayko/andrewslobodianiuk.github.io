@@ -18,40 +18,29 @@
     margin: 0 auto;
     background-color: white;
 }
-
-.logo {
-    float: left;
+header {
     height: 189px;
-    width: 500px;
+    width: 1000px;
+    font: 12px Tahoma, sans-serif, Serif;
+    color: #128aa7;
 }
 
-.logo img {
+header>img {
     position: absolute;
     padding: 25px 0 0 30px;
 }
 
-.logo p {
-    position: relative;
-    margin: 0;
+header p {
+    position: absolute;
     padding: 115px 0 0 100px;
-    font: 12px Tahoma, sans-serif, Serif;
-    color: #128aa7;
     z-index: 1;
 }
 
-.contacts {
-    height: 189px;
-    width: 500px;
-    float: right;
-    font: 12px Tahoma, sans-serif, Serif;
-    color: #128aa7;
-
-}
 .phones {
     float: right;
     padding-right: 32px;
+    margin-top: 20px;
 }
-
 
 .phones li {
     line-height: 17px;
@@ -62,14 +51,11 @@
     font-weight: bold;
 }
 
-
 .countries_flags {
+    margin: 25px 25px 10px 0;
     float: right;
     font: 10px Tahoma, sans-serif, Serif;
-}
-
-.countries_flags {
-    margin: 35px 25px 10px 0;
+    clear: right;
 }
 
 .countries_flags li {
@@ -88,8 +74,6 @@
     display: block;
     padding-left: 5px;
 }
-
-
 
 .banner {
     height: 237px;
