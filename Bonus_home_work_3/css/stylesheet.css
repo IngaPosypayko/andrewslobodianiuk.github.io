@@ -1,13 +1,43 @@
-.wrapper {
-    background-color: black;
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
+
+
+
+.wrapper {
+    background-color: #09090a;
+}
 
 .content {
     background-image: url("../img/background.png");
     width: 960px;
     height: 883px;
     margin: 0 auto;
+    color: white;
 }
 
 
+.img_1,
+.img_2 {
+    list-style: none;
+}
+
+
+.img_1 li,
+.img_2 li {
+    float: left;
+    display: block;
+    width: 264px;
+    height: 183px;
+}
+
+
+.img_1 img,
+.img_2 img {
+    clear: right;
+}
