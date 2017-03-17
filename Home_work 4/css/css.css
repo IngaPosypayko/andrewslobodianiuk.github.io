@@ -17,6 +17,7 @@
     height: 1023px;
     margin: 0 auto;
     background-color: white;
+    box-shadow: 0px 0px 15px 0px #000000;
 }
 header {
     height: 189px;
@@ -75,9 +76,68 @@ header p {
     padding-left: 5px;
 }
 
+.countries_flags a {
+    color: #128aa7;
+}
+
 .banner {
     height: 237px;
     border-bottom: solid 1px #97c9e9;
     border-top: solid 1px #97c9e9;
 }
 
+nav {
+    width: 1000px;
+    height: 28px;
+    background-color: #333333;
+    box-shadow: 0 3px 7px 0 #000000;
+}
+
+nav a {
+    font: 14px Tahoma, sans-serif, Serif;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    letter-spacing:-1px;
+}
+
+.menu>li {
+    float: left;
+    position: relative;
+    letter-spacing:normal;
+    display: block;
+    width: 140px;
+    height: 24px;
+    text-align: center;
+    padding-top: 4px;
+}
+
+.triangles {
+    font-size: 7px;
+    margin-left:3px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 28px;
+    width: 150px;
+    height: 130px;
+    background-color: #333333 ;
+    box-shadow: 0 0 9px 0 #000000;
+}
+
+.submenu>li {
+    display: block;
+    text-align: left;
+    margin: 6px 0 0 10px;
+}
+
+.menu> li:hover>.submenu {
+    display: block;
+}
