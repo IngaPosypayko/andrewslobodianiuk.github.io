@@ -21,6 +21,7 @@
     box-shadow: 0px 0px 15px 0px #000000;
 }
 header {
+    position: relative;
     height: 189px;
     width: 1000px;
     font: 12px Tahoma, sans-serif, Serif;
