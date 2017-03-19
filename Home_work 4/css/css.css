@@ -190,15 +190,14 @@ nav ul{
 }
 
 .main_content_left {
-    width: 210px;
+    width: 21%;
     border-right: solid 1px #c7cacf;
     background-color: #edeef0;
 }
 
 
 .main_content_right {
-
-    width: 210px;
+    width: 21%;
     border-left: solid 1px #c7cacf;
     background-color: #edeef0;
 }
