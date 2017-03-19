@@ -1,7 +1,26 @@
 
 .wrapper {
-    background-image: url("../img/bg.png");
     font-family: Tahoma, sans-serif, Serif;
+    background: linear-gradient(to bottom, rgb(18,151,184) 0%,
+                rgb(18,151,183) 1%,
+                rgb(18,138,167) 1%,
+                rgb(18,138,167) 4%,
+                rgb(94,240,255) 4%,
+                rgb(17,206,225) 4%,
+                rgb(24,207,226) 5%,
+                rgb(45,212,229) 6%,
+                rgb(79,218,233) 8%,
+                rgb(186,240,247) 13%,
+                rgb(218,248,250) 15%,
+                rgb(241,252,253) 16%,
+                rgb(255,255,255) 18%,
+                rgb(64,198,211) 18%,
+                rgb(56,187,205) 21%,
+                rgb(20,150,179) 30%,
+                rgb(17,145,177) 32%,
+                rgb(15,140,173) 47%,
+                rgb(12,119,161) 85%,
+                rgb(12,115,159) 100%);
 }
 
 .wrapper>p {
@@ -32,6 +51,8 @@ header>img {
     position: absolute;
     top:25px;
     left: 30px;
+    display: block;
+    float: none;
 }
 
 header p {
@@ -39,6 +60,8 @@ header p {
     top: 115px;
     left: 100px;
     z-index: 1;
+    display: block;
+    float: none;
 }
 
 .phones {
@@ -146,7 +169,8 @@ nav ul{
 }
 
 .main_content {
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main_content_left p,
@@ -165,23 +189,24 @@ nav ul{
     padding: 10px 0 7px 0;
 }
 
-
 .main_content_left {
-    float: left;
     width: 210px;
     border-right: solid 1px #c7cacf;
     background-color: #edeef0;
-    padding-bottom: 20000px;
-    margin-bottom: -20000px;
 }
 
 
 .main_content_right {
-    float: right;
+
     width: 210px;
     border-left: solid 1px #c7cacf;
     background-color: #edeef0;
-    padding-bottom: 20000px;
-    margin-bottom: -20000px;
+}
 
+.clearfix:after {
+    content		: ".";
+    visibility	: hidden;
+    display		: block;
+    height		: 0;
+    clear		: both;
 }
