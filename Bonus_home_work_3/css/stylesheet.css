@@ -7,10 +7,10 @@
 }
 
 
-
-
 .wrapper {
     background-color: #09090a;
+    font-family: Tahoma, sans-serif, Serif;
+    color: #e6e6e6;
 }
 
 .content {
@@ -21,23 +21,41 @@
     color: white;
 }
 
-
-.img_1,
-.img_2 {
-    list-style: none;
+.main_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.img_country {
+    text-align: center;
+}
 
-.img_1 li,
-.img_2 li {
-    float: left;
+.img_country a {
     display: block;
-    width: 264px;
-    height: 183px;
+    text-decoration: none;
+    color: #e6e6e6;
+    font-size: 15px;
 }
 
 
-.img_1 img,
-.img_2 img {
-    clear: right;
+.img_country img {
+    width: 254px;
+    height: 172px;
+    padding-top: 6px;
 }
+
+
+.ramka {
+    -webkit-border-image: url("../img/ramka.png") 1 round;
+    width: 265px;
+    height: 184px;
+}
+
+.img_country p {
+    margin: 2px 0 0 0;
+}
+
+
+
+
