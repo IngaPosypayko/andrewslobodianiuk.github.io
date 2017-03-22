@@ -39,23 +39,22 @@
 }
 
 
-.img_country img {
-    width: 254px;
-    height: 172px;
-    padding-top: 6px;
+.main_content img {
+    border: solid 5px gainsboro;
+
 }
 
 
-.ramka {
-    -webkit-border-image: url("../img/ramka.png") 1 round;
-    width: 265px;
-    height: 184px;
+.img {
+    display: inline-block;
+    line-height: 0;
+    -webkit-box-shadow: 0 0 10px 10px red inset;
 }
 
-.img_country p {
-    margin: 2px 0 0 0;
+.img img {
+    position: relative;
+    z-index: -1;
+
 }
-
-
 
 
