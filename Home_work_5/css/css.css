@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'helveticaneuecyrlight';
     src: url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2');
-    url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff');
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 .wrapper {
@@ -112,7 +111,7 @@ form {
 form p:first-child {
     margin: 0;
     font-size: 24px;
-    padding: 20px 219px 20px 213px ;
+    padding: 7px 219px 20px 213px ;
     border-bottom: solid 2px #afb6a4;
 }
 
@@ -120,7 +119,7 @@ fieldset {
     border-bottom: none;
     border-left: none;
     border-right: none;
-    width: 275px;
+    width: 255px;
 }
 
 legend {
@@ -128,19 +127,57 @@ legend {
     padding: 0 5px 0 5px;
 }
 
-
 form input{
     width: 277px;
 }
 
 .checkbox input {
     width: auto;
+}
+
+.button_facebook {
+    background:  -webkit-linear-gradient(top, #3e5694 0%,#3b5798 3%,#3d5698 9%,#395499 19%,#395295 22%,#3a5395 28%,#334983 66%,#31467f 81%,#2b4276 97%,#304272 100%);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button_facebook a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 35px;
+    width: 277px;
 
 }
 
+.button_facebook ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+.button_facebook li {
+    display: inline-block;
+}
 
+.logo_facebook {
+    height: 35px;
+    width: 38px;
+    border-right: 1px solid #203a75;
 
+}
 
+.logo_facebook i {
+    padding: 10px 0 0 15px;
+}
 
+.font_normal {
+    font-weight: normal;
+}
+
+.logo_facebook_login {
+    padding: 0 21px 0 33px;
+
+}
 
