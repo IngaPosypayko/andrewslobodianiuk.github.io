@@ -97,12 +97,45 @@
 }
 
 
-.main_content {
+form {
     background: rgba(0,0,0,0.6);
     width: 560px;
     height: 614px;
     margin: auto;
+    color: white;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form p:first-child {
+    margin: 0;
+    font-size: 24px;
+    padding: 20px 219px 20px 213px ;
+    border-bottom: solid 2px #afb6a4;
+}
+
+fieldset {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    width: 275px;
+}
+
+legend {
+    text-align: center;
+    padding: 0 5px 0 5px;
+}
+
+
+form input{
+    width: 277px;
+}
+
+.checkbox input {
+    width: auto;
+
 }
 
 
