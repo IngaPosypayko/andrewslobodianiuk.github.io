@@ -9,8 +9,6 @@
 .wrapper {
     font-family: helveticaneuecyrlight, Serif, sans-serif;
     font-size: 14px;
-    background-image: url("../img/background.png") ;
-    min-height: 100vh;
     margin: 0 auto;
     width: 1215px;
 }
@@ -93,6 +91,9 @@
 .content {
     display: flex;
     height: 100vh;
+    background-image: url("../img/background.png") ;
+
+
 }
 
 
