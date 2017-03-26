@@ -120,7 +120,7 @@ form h1{
 /* Button Facebook */
 .button_facebook {
     background:  -webkit-linear-gradient(top, #3e5694 0%,#3b5798 3%,#3d5698 9%,#395499 19%,#395295 22%,#3a5395 28%,#334983 66%,#31467f 81%,#2b4276 97%,#304272 100%);
-    border-radius: 5px;
+    border-radius: 3px;
     font-weight: bold;
     font-size: 14px;
     margin: 20px 0 15px 0;
