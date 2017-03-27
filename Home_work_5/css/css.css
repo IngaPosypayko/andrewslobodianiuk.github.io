@@ -103,14 +103,21 @@
 
 .content {
     display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
 }
 
-
-form {
+.content_center {
     background: rgba(0,0,0,0.6);
     width: 560px;
-    height: 614px;
-    margin: auto;
+    flex-grow: inherit;
+
+
+}
+
+form {
     color: #999999;
     display: flex;
     flex-direction: column;
@@ -118,10 +125,10 @@ form {
     justify-content: space-around;
 }
 
-form h1{
+h1{
     margin: 0;
     font-size: 24px;
-    padding: 10px 219px 17px 213px ;
+    padding: 23px 219px 17px 213px ;
     border-bottom: solid 2px #afb6a4;
     color: white;
 }
@@ -132,44 +139,36 @@ form h1{
     border-radius: 3px;
     font-weight: bold;
     font-size: 14px;
-    margin: 20px 0 15px 0;
-}
-
-.button_facebook a {
+    margin: 35px auto 30px auto;
     text-decoration: none;
     color: white;
-    display: block;
+    display: flex;
     height: 35px;
     width: 277px;
-
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.button_facebook ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+.button_facebook p {
+    margin: 0 0 0 35px;
 
-.button_facebook li {
-    display: inline-block;
-}
-
-.button_facebook li:first-child {
-    height: 27px;
-    width: 23px;
-    border-right: 1px solid #203a75;
-    font-size: 20px;
-    padding: 8px 0 0 15px;
-    margin-right: 32px;
 }
 
 .font_normal {
     font-weight: normal;
 }
 
+.fa-facebook {
+    height: 27px;
+    width: 23px;
+    border-right: 1px solid #203a75;
+    font-size: 20px;
+    padding: 8px 0 0 15px;
+}
+
 .fa-chevron-right {
     font-size: 12px;
-    margin-left: 22px;
+    margin-left: 35px;
 }
 /* End */
 
@@ -179,7 +178,11 @@ fieldset {
     border-right: none;
     width: 255px;
     border-color: #666666;
-    margin-bottom: -10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 legend {
@@ -208,14 +211,7 @@ legend {
 }
 /* End */
 
-.checkbox input {
-    width: auto;
-}
 
-.checkbox label {
-    margin-left: 5px;
-    font-size: 14px;
-}
 
 .submit_button {
     width: 151px;
@@ -236,16 +232,17 @@ legend {
 }
 
 
-.text_below_submit_button {
+.private_policy_text {
     font-size: 11px;
+    color:#999999 ;
 }
 
-.text_below_submit_button p{
+.private_policy_text p{
     text-align: center;
     margin: 0;
 }
 
-.text_below_submit_button p:last-child {
+.private_policy_text p:last-child {
     margin-bottom: 10px;
 }
 
