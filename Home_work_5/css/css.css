@@ -112,7 +112,6 @@
 .content_center {
     background: rgba(0,0,0,0.6);
     width: 560px;
-
 }
 
 form {
@@ -194,6 +193,7 @@ legend {
     border-bottom: solid 1px grey;
     padding-left: 18px;
     color: #999999;
+    margin: 7px 0;
 }
 
 
@@ -223,22 +223,21 @@ legend {
                                                 rgba(51,130,200,1) 97%,
                                                 rgba(65,150,210,1) 100%);
     outline: none;
+    margin: 0 60px 10px 60px;
 }
 
+.checkbox {
+    margin: 7px 0 25px 0;
+}
 
 .private_policy_text {
+    white-space: pre;
     font-size: 11px;
     color:#999999 ;
-}
-
-.private_policy_text p{
     text-align: center;
-    margin: 0;
 }
 
-.private_policy_text p:last-child {
-    margin-bottom: 10px;
-}
+
 
 
 
