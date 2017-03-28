@@ -12,6 +12,8 @@
     min-height: 100vh;
     background-image: url("../img/background.png");
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -103,9 +105,9 @@
 
 .content {
     display: flex;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 
 }
 
@@ -235,6 +237,7 @@ legend {
     font-size: 11px;
     color:#999999 ;
     text-align: center;
+
 }
 
 
