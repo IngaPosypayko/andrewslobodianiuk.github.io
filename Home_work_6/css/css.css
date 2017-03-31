@@ -1,0 +1,29 @@
+
+.wrapper {
+    font-family: "Lucida Sans Unicode", Serif, sans-serif;
+}
+
+header {
+    width: 910px;
+    display: flex;
+}
+
+.registration {
+    display: flex;
+    width: 495px;
+    background: -webkit-linear-gradient(top, #1f6787 0%,#1c5e7f 17%,#13466a 52%,#0d3458 100%);
+}
+
+
+header>i {
+    display: block;
+    width: 22px;
+    height: 21px;
+    background-image: url("../img/phone_icon.png");
+}
+
+.phones a {
+    font: normal 18px Arial;
+    color: #5e696d;
+    text-decoration: none;
+}
