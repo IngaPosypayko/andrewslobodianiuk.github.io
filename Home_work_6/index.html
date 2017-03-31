@@ -10,105 +10,159 @@
 <div class="wrapper">
     <header>
         <i></i>
-        <p></p>
-        <p></p>
+        <a href="tel: +74951234567">(044) 123-45-67</a>
+        <a href="tel: +74951234567">(044) 567-89-10</a>
         <div class="registration">
             <i></i>
             <form>
-                <input type="text">
-                <input type="text">
+                <input type="text" placeholder="Логин">
+                <input type="password" placeholder="Пароль">
             </form>
+            <a href="#">Вход</a>
+            <a href="#">Регистрация</a>
+            <a href="#">Забыли пароль?</a>
         </div>
         <div class="menu_icons">
             <i></i>
-            <i></i>
+            <i class="sitemap_icon"></i>
             <i></i>
         </div>
     </header>
-    <img src="" alt="">
+    <img src="img/banner.png" alt="banner">
     <nav>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>О КОМПАНИИ</li>
+            <li>ОПЛАТА</li>
+            <li>ДОСТАВКА</li>
+            <li>СТАТЬИ</li>
+            <li>КОНТАКТЫ</li>
         </ul>
         <i></i>
-        <p></p>
-        <p></p>
+        <p>товаров<span class="total_products_in_cart">0</span></p>
+        <p>на сумму <span class="total_price_in_cart">0,00 грн</span></p>
     </nav>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
+    <div class="search_forms">
+        <img src="img/find_form_car.png" alt="cars">
+        <img src="img/find_form_tires.png" alt="tires">
+        <img src="img/find_form_disk.png" alt="disk">
+    </div>
     <div class="main_content">
-        <div class="left">
-            <div class="product_catalog">
+            <nav class="product_catalog">
                 <div class="name_list">
                     <i></i>
-                    <p></p>
+                    <p>КАТАЛОГ ПРОДУКЦИИ</p>
+                </div>
+                <div class="name_list">
+                    <i></i>
+                    <p>ШИНЫ</p>
                 </div>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
                 </ul>
                 <div class="name_list">
                     <i></i>
-                    <p></p>
+                    <p>ДИСКИ</p>
                 </div>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
                 </ul>
                 <div class="name_list">
                     <i></i>
-                    <p></p>
+                    <p>БОЛТЫ</p>
                 </div>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
+                    <li>Наименование</li>
                 </ul>
-            </div>
-        </div>
+            </nav>
         <!-- TODO вырезать новые фото товара, сейчас маленький белый фон, нужно что бы блок был квадратный и потом дать ему просто рамку -->
         <div class="center">
             <div class="product">
-                <p class="product_brand"></p>
-                <p class="product_model"></p>
-                <img src="" alt="">
-                <p class="product_price"></p>
+                <p class="product_brand">Goodyear</p>
+                <p class="product_model">Ultra Grip Extreme</p>
+                <img src="img/goodyear_tire.png" alt="tire">
+                <figure class="product_price">90.00 грн</figure>
             </div>
-
+            <div class="product">
+                <p class="product_brand">Nokian</p>
+                <p class="product_model">Hakkapeliitta R</p>
+                <img src="img/nokian_tire.png" alt="tire">
+                <figure class="product_price">115.00 грн</figure>
+            </div>
+            <div class="product">
+                <p class="product_brand">Hankook</p>
+                <p class="product_model">K 708 155/65 R14 </p>
+                <img src="img/hankook_tire.png" alt="tire">
+                <figure class="product_price">393.00 грн</figure>
+            </div>
+            <div class="product">
+                <p class="product_brand">Goodyear</p>
+                <p class="product_model">Ultra Grip Extreme</p>
+                <img src="img/goodyear_tire.png" alt="tire">
+                <figure class="product_price">90.00 грн</figure>
+            </div>
+            <div class="product">
+                <p class="product_brand">Nokian</p>
+                <p class="product_model">Hakkapeliitta R</p>
+                <img src="img/nokian_tire.png" alt="tire">
+                <figure class="product_price">115.00 грн</figure>
+            </div>
+            <div class="product">
+                <p class="product_brand">Hankook</p>
+                <p class="product_model">K 708 155/65 R14 </p>
+                <img src="img/hankook_tire.png" alt="tire">
+                <figure class="product_price">393.00 грн</figure>
+            </div>
         </div>
-        <div class="right">
+        <form class="right">
             <div class="name_list">
                 <i></i>
-                <p></p>
+                <p>БРЕНДЫ</p>
             </div>
             <div class="name_list">
                 <i></i>
-                <p></p>
+                <p>ШИНЫ</p>
             </div>
-            <label><input type="checkbox"></label>
-            <label><input type="checkbox"></label>
-            <label><input type="checkbox"></label>
+            <label><input type="checkbox">Бренд</label>
+            <label><input type="checkbox">Бренд</label>
+            <label><input type="checkbox">Бренд</label>
             <div class="name_list">
                 <i></i>
-                <p></p>
+                <p>ДИСКИ</p>
             </div>
-            <label><input type="checkbox"></label>
-            <label><input type="checkbox"></label>
-            <label><input type="checkbox"></label>
+            <label><input type="checkbox">Бренд</label>
+            <label><input type="checkbox">Бренд</label>
+            <label><input type="checkbox">Бренд</label>
             <input type="submit" value="ВЫБРАТЬ">
-        </div>
+        </form>
     </div>
-    <!-- TODO footer and brands -->
+    <div class="brands_logo">
+        <img src="img/toyo_logo.png" alt="logo">
+        <img src="img/bridgestone_logo.png" alt="logo">
+        <img src="img/Continental_logo.png" alt="logo">
+        <img src="img/cooper_logo.png" alt="logo">
+        <img src="img/avon_logo.png" alt="logo">
+        <img src="img/tire_factory.png" alt="logo">
+        <img src="img/pirelli_logo.png" alt="logo">
+        <img src="img/dunlop_logo.png" alt="logo">
+    </div>
+    <footer>
+        <ul>
+            <li>О компании</li>
+            <li>Доставка</li>
+            <li>Статьи</li>
+            <li>Контакты</li>
+        </ul>
+        <p>Создание сайта © Global Vision</p>
+    </footer>
 </div>
 </body>
 </html>
