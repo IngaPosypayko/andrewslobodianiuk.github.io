@@ -120,7 +120,6 @@ header>i {
     height: 9px;
     margin: 4px 0 0 9px;
 }
-
 /*  header end */
 
 
@@ -333,6 +332,7 @@ header>i {
 .product_price {
     color: #114165;
     font: italic bold 16px arial, serif,sans-serif;
+
 }
 
 .currency {
@@ -348,9 +348,8 @@ header>i {
     border: solid 1px #adb6b9;
     border-radius: 9px;
     background-color: white;
+    margin-bottom: 5px;
 }
-
-
 
 /* end main content center */
 
@@ -405,14 +404,125 @@ input[type="checkbox"] {
 
 /* brand logo */
 
+
 .brands_logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 20px 0 15px 0;
+}
 
+
+.brands_logo ul {
+    margin: 0;
+    padding: 0;
+    width: 680px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
 
+.brands_logo li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.logo1 {
+    background-image: url("../img/toyo_logo.png");
+    width: 83px;
+    height: 21px;
+}
+
+.logo2 {
+    background-image: url("../img/bridgestone_logo.png");
+    width: 97px;
+    height: 14px;
+}
+
+
+.logo3 {
+    background-image: url("../img/Continental_logo.png");
+    width: 77px;
+    height: 21px;
+}
+
+
+.logo4 {
+    background-image: url("../img/cooper_logo.png");
+    width: 59px;
+    height: 21px;
+}
+
+.logo5 {
+    background-image: url("../img/avon_logo.png");
+    width: 77px;
+    height: 13px;
+}
+
+.logo6 {
+    background-image: url("../img/tire_factory.png");
+    width: 57px;
+    height: 27px;
+}
+
+.logo7 {
+    background-image: url("../img/pirelli_logo.png");
+    width: 61px;
+    height: 14px;
+}
+
+.logo8 {
+    background-image: url("../img/dunlop_logo.png");
+    width: 72px;
+    height: 13px;
+}
 /* end brand logo */
+
+/* footer */
+
+footer {
+    width: 912px;
+    background-color: #213a4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer ul {
+    margin: 13px 0 0 0;
+    padding: 0;
+
+}
+
+footer li {
+    list-style: none;
+    display: inline-block;
+    color: #bec6c9;
+    font-size: 12px;
+}
+
+footer a {
+    font-family: Arial, Serif, sans-serif;
+    font-size: 12px;
+    color: #bec6c9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #52abcb;
+}
+
+footer p {
+    font-family: Arial, Serif, sans-serif;
+    font-size: 10px;
+    color: #7f4740;
+    margin: 16px 0 50px 0;
+}
+
+/* end footer */
 
 
 
