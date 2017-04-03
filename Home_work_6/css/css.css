@@ -204,13 +204,12 @@ header>i {
 
 .main_content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     box-sizing: border-box;
+    width: 912px;
 }
 
-.content_right {
-    width: 21%;
-}
+
 /* product catalog left */
 
 .product_catalog {
@@ -269,12 +268,10 @@ header>i {
 
 .product_catalog li {
     list-style-image: url("../img/liststyle_icon.png") ;
-
 }
 
 .product_catalog li:hover {
     list-style-image: url("../img/liststlyle_bold_icon.png");
-
 }
 
 
@@ -300,11 +297,60 @@ header>i {
     width: 58%;
     display: flex;
     flex-flow:row wrap;
+    justify-content: space-around;
+    background: -webkit-linear-gradient(top, rgba(229,231,232,1) 0%,
+                                            rgba(219,224,226,1) 15%,
+                                            rgba(186,198,203,1) 44%,
+                                            rgba(168,183,190,1) 65%,
+                                            rgba(155,173,181,1) 83%,
+                                            rgba(147,167,176,1) 100%);
+    border-radius: 3px;
+    margin: 0 9px 0 9px;
+    padding-top: 15px;
 }
 
 .product {
-    width: 140px;
+    margin-bottom: 26px;
 }
+
+.content_center p,
+.content_center figure {
+    margin: 0;
+    text-align: center;
+}
+
+.product_brand {
+    font-size: 15px;
+    color: #206988;
+}
+
+.product_model {
+    font-size: 13px;
+    color: #1f2528;
+
+}
+
+.product_price {
+    color: #114165;
+    font: italic bold 16px arial, serif,sans-serif;
+}
+
+.currency {
+    font-size: 12px;
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 130px;
+    border: solid 1px #adb6b9;
+    border-radius: 9px;
+    background-color: white;
+}
+
+
 
 /* end main content center */
 
@@ -313,6 +359,7 @@ header>i {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 21%;
 }
 
 input[type="submit"] {
@@ -347,7 +394,6 @@ input[type="checkbox"] {
 .list_checkbox_1 {
     width: 137px;
     margin-left: 15px;
-
 }
 
 .list_checkbox_2 {
@@ -355,8 +401,18 @@ input[type="checkbox"] {
     width: 137px;
 }
 
-
 /* end product filter right */
+
+/* brand logo */
+
+.brands_logo {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+/* end brand logo */
 
 
 
