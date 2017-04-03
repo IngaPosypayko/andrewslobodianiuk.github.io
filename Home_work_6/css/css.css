@@ -312,7 +312,7 @@ header>i {
 .content_right {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 input[type="submit"] {
@@ -327,13 +327,33 @@ input[type="submit"] {
                                                 rgba(12,51,87,1) 100%);
     border: none;
     border-radius: 16px;
-    -webkit-box-shadow: 2px 2px 9px 0px rgba(122,122,122,1);
+    -webkit-box-shadow: 2px 2px 9px 0 rgba(122,122,122,1);
+    margin: 21px 0 0 25px;
+}
 
+label {
+    color: #465961;
+    font-size: 13px;
+    margin: 10px 0 0 0;
 }
 
 
+input[type="checkbox"] {
+    margin: 0 13px 0 25px;
+    height: 10px;
+    width: 10px;
+}
 
+.list_checkbox_1 {
+    width: 137px;
+    margin-left: 15px;
 
+}
+
+.list_checkbox_2 {
+    margin: 10px 0 0 15px;
+    width: 137px;
+}
 
 
 /* end product filter right */
