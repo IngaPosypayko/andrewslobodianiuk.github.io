@@ -36,17 +36,17 @@
     </header>
     <img src="img/banner.png" alt="banner">
     <nav class="menu">
-        <ul>
+        <ul class="menu_links">
             <li><a href="#">О КОМПАНИИ</a></li>
             <li><a href="#">ОПЛАТА</a></li>
             <li><a href="#">ДОСТАВКА</a></li>
             <li><a href="#">СТАТЬИ</a></li>
             <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
-        <i class="basket_icon"></i>
          <div class="cart">
-            <span>товаров:<span class="total_products_in_cart">0</span></span>
-            <span class="amount">на сумму: <span class="total_products_in_cart">&nbsp;0,00 грн</span></span>
+             <a class="basket_icon" href="#"></a>
+            <p>товаров:<span class="total_products_in_cart">0</span></p>
+            <p class="amount">на сумму: <span class="total_products_in_cart">&nbsp;0,00 грн</span></p>
          </div>
     </nav>
     <div class="search_forms">
@@ -56,40 +56,46 @@
     </div>
     <div class="main_content">
             <aside class="product_catalog">
-                <div class="name_catalog">
+                <h4 class="name_catalog">
                     <i class="list_icon"></i>
-                    <p>КАТАЛОГ ПРОДУКЦИИ:</p>
-                </div>
-                <div class="name_list">
+                    КАТАЛОГ ПРОДУКЦИИ:
+                </h4>
+                <section>
+                <h4 class="name_list">
                     <i class="marker_icon"></i>
-                    <p>ШИНЫ</p>
-                </div>
+                    ШИНЫ
+                </h4>
                 <ul>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                 </ul>
-                <div class="name_list">
+                </section>
+                <section>
+                <h4 class="name_list">
                     <i class="marker_icon"></i>
-                    <p>ДИСКИ</p>
-                </div>
+                    ДИСКИ
+                </h4>
                 <ul>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                 </ul>
-                <div class="name_list">
+                </section>
+                <section>
+                <h4 class="name_list">
                     <i class="marker_icon"></i>
-                    <p>БОЛТЫ</p>
-                </div>
+                    БОЛТЫ
+                </h4>
                 <ul>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                 </ul>
+                </section>
             </aside>
         <div class="content_center">
             <figure class="product">
@@ -173,28 +179,46 @@
                 <p class="product_price">393.00 <span class="currency">грн.</span></p>
             </figure>
         </div>
-        <form class="content_right">
-            <div class="name_catalog">
+
+
+
+
+
+        <aside class="content_right">
+            <h4 class="name_catalog">
                 <i class="list_icon"></i>
-                <p>БРЕНДЫ</p>
-            </div>
-            <div class="name_list list_checkbox_1">
-                <i class="marker_icon"></i>
-                <p>ШИНЫ</p>
-            </div>
-            <label><input type="checkbox">Бренд</label>
-            <label><input type="checkbox">Бренд</label>
-            <label><input type="checkbox">Бренд</label>
-            <div class="name_list list_checkbox_2">
-                <i class="marker_icon"></i>
-                <p>ДИСКИ</p>
-            </div>
-            <label><input type="checkbox">Бренд</label>
-            <label><input type="checkbox">Бренд</label>
-            <label><input type="checkbox">Бренд</label>
-            <input type="submit" value="ВЫБРАТЬ">
-        </form>
+                БРЕНДЫ
+            </h4>
+            <form action="#">
+                <fieldset>
+                    <legend class=" list_checkbox_1">
+                        <i class="marker_icon"></i>
+                       ШИНЫ
+                    </legend>
+                    <label><input type="checkbox">Бренд</label>
+                    <label><input type="checkbox">Бренд</label>
+                    <label><input type="checkbox">Бренд</label>
+                </fieldset>
+                <fieldset>
+                    <legend class="name_list list_checkbox_2">
+                        <i class="marker_icon"></i>
+                        ДИСКИ
+                    </legend>
+                    <label><input type="checkbox">Бренд</label>
+                    <label><input type="checkbox">Бренд</label>
+                    <label><input type="checkbox">Бренд</label>
+                </fieldset>
+                <input type="submit" value="ВЫБРАТЬ">
+            </form>
+        </aside>
     </div>
+
+
+
+
+
+
+
     <div class="brands_logo">
         <ul>
             <li class="logo1"></li>
