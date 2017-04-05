@@ -14,7 +14,7 @@ header {
 
 }
 
-header>i {
+.phone_icon {
     display: block;
     width: 22px;
     height: 21px;
@@ -23,7 +23,8 @@ header>i {
 }
 
 .phones {
-    margin-top: 7px;
+    margin: 7px 0 0 0;
+
 }
 
 .phones a {
@@ -40,7 +41,7 @@ header>i {
     background: -webkit-linear-gradient(top, #1f6787 0%,#1c5e7f 17%,#13466a 52%,#0d3458 100%);
     margin: 0 0 0 16px;
     border-radius: 3px;
-    -webkit-box-shadow: 2px 2px 9px 0px rgba(122,122,122,1);
+    -webkit-box-shadow: 2px 2px 9px 0 rgba(122,122,122,1);
 
 }
 
@@ -55,7 +56,7 @@ header>i {
     padding-left: 5px;
 }
 
-.registration i:first-child {
+.man_icon {
     display: block;
     background-image: url("../img/registration_icon_man.png");
     height: 18px;
@@ -74,13 +75,16 @@ header>i {
 
 .sign_up_registration_links {
     display: flex;
-    margin-left: 6px;
+    margin:0 0 0 6px;
 }
 
-.separator {
-    font-size: 11px;
-    color: white;
-    margin: 8px 3px 0 3px;
+.separator::after {
+    margin: 0 3px;
+    content: "|";
+}
+
+.forgot_password {
+    margin: 0;
 }
 
 .forgot_password a {
@@ -156,7 +160,7 @@ header>i {
 
 }
 
-.menu a {
+.menu_links a {
     color: #bdc4c7;
     text-decoration: none;
     font-size: 13px;
@@ -166,7 +170,7 @@ header>i {
 
 }
 
-.menu a:hover {
+.menu_links a:hover {
     border-radius: 12px;
     background: -webkit-linear-gradient(top, rgba(42,89,110,1) 0%,
                                             rgba(31,103,135,1) 4%,
@@ -179,8 +183,12 @@ header>i {
     color: #929b9f;
     font-size: 11px;
     padding-top: 10px;
-    margin-right:14px;
+    margin:0 14px 0 55px;
+    display: flex;
+}
 
+.cart p{
+    margin: 0;
 }
 
 .total_products_in_cart {
@@ -188,16 +196,16 @@ header>i {
     color: #0d5a8f;
 }
 
-.amount {
-    margin-left: 10px;
+ .cart .amount {
+    margin:0 10px;
 }
 
-.menu i{
+.basket_icon{
     background-image: url("../img/basket_icon.png");
     height: 17px;
     width: 21px;
     display: block;
-    margin:8px 5px 0 55px;
+    margin:0 5px 10px 0;
 }
 
 /* end nav menu */
@@ -221,16 +229,18 @@ header>i {
     height: 27px;
     border-radius: 16px;
     border: solid 1px #bdc4c7;
-    font-size: 13px;
     color: #114165;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    -webkit-box-shadow: 0px 1px 9px 0px rgba(158,158,158,1);
-    margin-bottom: 14px;
+    -webkit-box-shadow: 0 1px 9px 0 rgba(158,158,158,1);
+    margin:0 0 14px 0;
+    font-weight: normal;
+    font-size: 13px;
+
 }
 
-.name_catalog i {
+.list_icon {
     background-image: url("../img/katalog_brand_icon.png");
     height: 23px;
     width: 23px;
@@ -242,14 +252,16 @@ header>i {
     height: 28px;
     border-radius: 16px;
     border: solid 1px #bdc4c7;
-    font-size: 14px;
     color: #114165;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-weight: normal;
+    font-size: 13px;
+    margin: 0;
 }
 
-.name_list i{
+.marker_icon{
     background-image: url("../img/marker_icon.png");
     width: 23px;
     height: 23px;
@@ -385,6 +397,12 @@ label {
     margin: 10px 0 0 0;
 }
 
+fieldset {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 input[type="checkbox"] {
     margin: 0 13px 0 25px;
@@ -399,9 +417,14 @@ input[type="checkbox"] {
 }
 
 .list_checkbox_2 {
-    margin: 10px 0 0 15px;
+    margin-left: 15px;
     width: 137px;
 }
+
+.list_2_fieldset {
+    margin-top: 10px;
+}
+
 
 /* end product filter right */
 
@@ -435,12 +458,14 @@ input[type="checkbox"] {
     background-image: url("../img/toyo_logo.png");
     width: 83px;
     height: 21px;
+    display: block;
 }
 
 .logo2 {
     background-image: url("../img/bridgestone_logo.png");
     width: 97px;
     height: 14px;
+    display: block;
 }
 
 
@@ -448,6 +473,7 @@ input[type="checkbox"] {
     background-image: url("../img/Continental_logo.png");
     width: 77px;
     height: 21px;
+    display: block;
 }
 
 
@@ -455,30 +481,35 @@ input[type="checkbox"] {
     background-image: url("../img/cooper_logo.png");
     width: 59px;
     height: 21px;
+    display: block;
 }
 
 .logo5 {
     background-image: url("../img/avon_logo.png");
     width: 77px;
     height: 13px;
+    display: block;
 }
 
 .logo6 {
     background-image: url("../img/tire_factory.png");
     width: 57px;
     height: 27px;
+    display: block;
 }
 
 .logo7 {
     background-image: url("../img/pirelli_logo.png");
     width: 61px;
     height: 14px;
+    display: block;
 }
 
 .logo8 {
     background-image: url("../img/dunlop_logo.png");
     width: 72px;
     height: 13px;
+    display: block;
 }
 /* end brand logo */
 

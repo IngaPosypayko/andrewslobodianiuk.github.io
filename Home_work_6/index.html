@@ -9,25 +9,24 @@
 <body>
 <div class="wrapper">
     <header>
-        <i></i>
-          <span class="phones">
+        <i class="phone_icon"></i>
+          <p class="phones">
             <a href="tel:(044)123-45-67">(044)123-45-67</a>
             <a href="tel:(044)123-45-67">(044)567-89-10</a>
-        </span>
+        </p>
         <div class="registration">
-            <i></i>
+            <i class="man_icon"></i>
             <form>
                 <input type="text" placeholder="логин">
                 <input type="password" placeholder="пароль">
             </form>
-            <span class="sign_up_registration_links">
-                <a href="#">вход</a>
-                <span class="separator">|</span>
+            <p class="sign_up_registration_links">
+                <a class="separator" href="#">вход</a>
                 <a href="#">регистрация</a>
-            </span>
-            <span class="forgot_password">
+            </p>
+            <p class="forgot_password">
                 <a href="#">забыли пароль?</a>
-            </span>
+            </p>
         </div>
         <div class="menu_icons">
             <a href="#"></a>
@@ -37,17 +36,17 @@
     </header>
     <img src="img/banner.png" alt="banner">
     <nav class="menu">
-        <ul>
+        <ul class="menu_links">
             <li><a href="#">О КОМПАНИИ</a></li>
             <li><a href="#">ОПЛАТА</a></li>
             <li><a href="#">ДОСТАВКА</a></li>
             <li><a href="#">СТАТЬИ</a></li>
             <li><a href="#">КОНТАКТЫ</a></li>
         </ul>
-        <i></i>
          <div class="cart">
-            <span>товаров:<span class="total_products_in_cart">0</span></span>
-            <span class="amount">на сумму: <span class="total_products_in_cart">&nbsp;0,00 грн</span></span>
+             <a class="basket_icon" href="#"></a>
+            <p>товаров:<span class="total_products_in_cart">0</span></p>
+            <p class="amount">на сумму: <span class="total_products_in_cart">&nbsp;0,00 грн</span></p>
          </div>
     </nav>
     <div class="search_forms">
@@ -57,40 +56,46 @@
     </div>
     <div class="main_content">
             <aside class="product_catalog">
-                <div class="name_catalog">
-                    <i></i>
-                    <p>КАТАЛОГ ПРОДУКЦИИ:</p>
-                </div>
-                <div class="name_list">
-                    <i></i>
-                    <p>ШИНЫ</p>
-                </div>
+                <h4 class="name_catalog">
+                    <i class="list_icon"></i>
+                    КАТАЛОГ ПРОДУКЦИИ:
+                </h4>
+                <section>
+                <h4 class="name_list">
+                    <i class="marker_icon"></i>
+                    ШИНЫ
+                </h4>
                 <ul>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                 </ul>
-                <div class="name_list">
-                    <i></i>
-                    <p>ДИСКИ</p>
-                </div>
+                </section>
+                <section>
+                <h4 class="name_list">
+                    <i class="marker_icon"></i>
+                    ДИСКИ
+                </h4>
                 <ul>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                 </ul>
-                <div class="name_list">
-                    <i></i>
-                    <p>БОЛТЫ</p>
-                </div>
+                </section>
+                <section>
+                <h4 class="name_list">
+                    <i class="marker_icon"></i>
+                    БОЛТЫ
+                </h4>
                 <ul>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                     <li><a href="#">Наименование</a></li>
                 </ul>
+                </section>
             </aside>
         <div class="content_center">
             <figure class="product">
@@ -172,45 +177,63 @@
                 <p class="product_price">393.00 <span class="currency">грн.</span></p>
             </figure>
         </div>
-        <form class="content_right">
-            <div class="name_catalog">
-                <i></i>
-                <p>БРЕНДЫ</p>
-            </div>
-            <div class="name_list list_checkbox_1">
-                <i></i>
-                <p>ШИНЫ</p>
-            </div>
-            <label><input type="checkbox">Бренд</label>
-            <label><input type="checkbox">Бренд</label>
-            <label><input type="checkbox">Бренд</label>
-            <div class="name_list list_checkbox_2">
-                <i></i>
-                <p>ДИСКИ</p>
-            </div>
-            <label><input type="checkbox">Бренд</label>
-            <label><input type="checkbox">Бренд</label>
-            <label><input type="checkbox">Бренд</label>
-            <input type="submit" value="ВЫБРАТЬ">
-        </form>
+
+        <aside class="content_right">
+            <h4 class="name_catalog">
+                <i class="list_icon"></i>
+                БРЕНДЫ
+            </h4>
+            <form action="#">
+                <fieldset>
+                        <legend>
+                            <div class="name_list list_checkbox_1">
+                            <i class="marker_icon"></i>
+                           ШИНЫ
+                            </div>
+                        </legend>
+                    <label><input type="checkbox">Бренд</label>
+                    <label><input type="checkbox">Бренд</label>
+                    <label><input type="checkbox">Бренд</label>
+                </fieldset>
+                <fieldset class="list_2_fieldset">
+                    <legend>
+                        <div class="name_list list_checkbox_2">
+                        <i class="marker_icon"></i>
+                        ДИСКИ
+                        </div>
+                    </legend>
+                    <label><input type="checkbox">Бренд</label>
+                    <label><input type="checkbox">Бренд</label>
+                    <label><input type="checkbox">Бренд</label>
+                </fieldset>
+                <input type="submit" value="ВЫБРАТЬ">
+            </form>
+        </aside>
     </div>
+
+
+
+
+
+
+
     <div class="brands_logo">
         <ul>
-            <li class="logo1"></li>
-            <li class="logo2"></li>
-            <li class="logo3"></li>
-            <li class="logo4"></li>
-            <li class="logo5"></li>
-            <li class="logo6"></li>
-            <li class="logo7"></li>
-            <li class="logo8"></li>
+            <li><a class="logo1" href="#"></a></li>
+            <li><a class="logo2" href="#"></a></li>
+            <li><a class="logo3" href="#"></a></li>
+            <li><a class="logo4" href="#"></a></li>
+            <li><a class="logo5" href="#"></a></li>
+            <li><a class="logo6" href="#"></a></li>
+            <li><a class="logo7" href="#"></a></li>
+            <li><a class="logo8" href="#"></a></li>
         </ul>
     </div>
     <footer>
         <ul>
-            <li><a href="#">О компании</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-            <li><a href="#">Доставка</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
-            <li><a href="#">Статьи</a>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+            <li class="separator"><a href="#">О компании</a></li>
+            <li class="separator"><a href="#">Доставка</a></li>
+            <li class="separator"><a href="#">Статьи</a></li>
             <li><a href="#">Контакты</a></li>
         </ul>
         <a href="#">Создание сайта © Global Vision</a>
