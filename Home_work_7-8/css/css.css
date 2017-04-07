@@ -1,0 +1,35 @@
+
+body {
+    height: 1000px;
+    width: 1000px;
+}
+
+
+
+.test {
+    background-image: url("../img/1.jpg");
+    height: 20%;
+}
+
+
+
+
+@media screen and (min-width: 480px){
+    
+    .test {
+        height: 40%;
+        background-image: url("../img/1.jpg");
+    }
+        
+        
+    }
+
+    
+@media screen and (min-width: 960px){
+
+    .test {
+        height: 60%;
+        background-image: url("../img/1.jpg");
+    }
+
+}
