@@ -106,14 +106,6 @@ body {
         display: none;
     }
 
-    .clearfix:after {
-        content		: ".";
-        visibility	: hidden;
-        display		: block;
-        height		: 0;
-        clear		: both;
-    }
-
     /* END Header 320*/
 
 
@@ -178,8 +170,6 @@ body {
           font-size: 18px;
           font-weight: normal;
           float: right;
-          clear: both;
-
       }
 
 
@@ -190,7 +180,6 @@ body {
         font-weight: normal;
         text-shadow: rgb(255, 255, 255) 0 0 21px;
         float: right;
-        clear: both;
     }
 
 
@@ -221,5 +210,12 @@ body {
 
 }
 
+.clearfix:after {
+    content		: ".";
+    visibility	: hidden;
+    display		: block;
+    height		: 0;
+    clear		: both;
+}
 
 
