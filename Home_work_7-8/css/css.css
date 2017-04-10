@@ -106,6 +106,14 @@ body {
         display: none;
     }
 
+    .clearfix:after {
+        content		: ".";
+        visibility	: hidden;
+        display		: block;
+        height		: 0;
+        clear		: both;
+    }
+
     /* END Header 320*/
 
 
@@ -143,8 +151,6 @@ body {
 
     .about_company_container__about_company_content {
         width: 320px;
-        display: flex;
-        flex-flow: row wrap;
     }
 
     .article__tittle {
@@ -152,7 +158,6 @@ body {
         font-size: 22px;
         font-weight: normal;
         margin: 0;
-
     }
 
     .article__content {
@@ -164,10 +169,53 @@ body {
         width: 200px;
         overflow: hidden;
         line-height: 22px;
-        margin: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .article__read_me {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          font-weight: normal;
+          float: right;
+          clear: both;
+
+      }
+
+
+    .article__read_me:hover {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: normal;
+        text-shadow: rgb(255, 255, 255) 0 0 21px;
+        float: right;
+        clear: both;
     }
 
 
+
+
+    .about_company_content__article--left {
+        margin-top: 70px;
+
+    }
+
+    .about_company_content__article--center {
+        margin-top: 25px;
+
+    }
+
+    .about_company_content__article--right {
+        margin: 25px 0 65px 0;
+
+    }
+
+
+    .about_company_content__article--left::before {
+
+
+    }
 
 
 
