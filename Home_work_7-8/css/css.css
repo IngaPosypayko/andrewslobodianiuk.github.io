@@ -1,3 +1,114 @@
 
+@font-face {
+    font-family: 'leagueGothic';
+    src: url('../fonts/LeagueGothic-Regular.woff') format('woff'),
+    url('../fonts/LeagueGothic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: leagueGothic, Serif,sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+
+    header {
+        background: url("../img/background_480.png") center top;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-header {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    .content-header__main_logo {
+        background-image: url("../img/logo/logo.png");
+        width: 152px;
+        height: 39px;
+        display: block;
+        margin-top: 70px;
+    }
+
+    .content-header__home_button {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 20px;
+        border-bottom: 2px solid #edbfff;
+        margin-top: 30px;
+    }
+
+
+    .slider__title {
+        color: white;
+        font-size: 32px;
+        font-weight: normal;
+        font-style: normal;
+        text-shadow: rgb(82, 82, 82) 0 2px 2px;
+        margin: 120px 0 0 0;
+    }
+
+    .slider__subtitle {
+        color: #edbfff;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        text-shadow: rgb(82, 82, 82) 0 2px 2px;
+        margin: 0;
+    }
+
+    .content-header__pagination {
+        margin: 80px 0 68px 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .content-header__pagination li {
+        display: inline-block;
+    }
+
+    .content-header__pagination a {
+        display: block;
+        height: 17px;
+        width: 17px;
+        background: rgba(0,0,0,0.3);
+        border-radius: 8px;
+        margin: 1px;
+    }
+
+    .content-header__pagination a:hover {
+        display: block;
+        height: 11px;
+        width: 11px;
+        border: 3px solid rgba(0,0,0,0.6);
+        background: #e7e7e7;
+        border-radius: 8px;
+        margin: 1px;
+
+    }
+
+
+
+    .content-header__main-menu {
+        display: none;
+    }
+    .slider__iphones-img {
+        display: none;
+    }
+
+    .slider_content {
+        display: none;
+    }
+
+
+
+}
+
 
 
