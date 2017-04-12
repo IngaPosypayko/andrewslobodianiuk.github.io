@@ -138,6 +138,7 @@ body {
                                                 rgba(50,37,57,1) 100%);
         display: flex;
         justify-content: center;
+        -webkit-box-shadow: 0 0 18px 0 rgba(84,84,84,1);
     }
 
 
@@ -229,14 +230,62 @@ body {
         float: left;
         margin: 3px 22px 0 0;
     }
-
     /* END About company block 320*/
 
+    /* updates_comments 320*/
+
+    .updates_comments_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .updates_comments_container__updates_comments {
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .updates_comments__comments {
+        width: 240px;
+        margin-top: 85px;
+    }
+
+    .comments_title {
+        color: #454545;
+        font-size: 24px;
+        font-weight: normal;
+        white-space: pre;
+        margin: 0;
+    }
+
+    .comments_title--pink {
+        color: #edbfff;
+    }
+
+    .comments__content {
+        font-family: "Open Sans Light",Serif,sans-serif;
+        font-size: 16px;
+        color: #454545;
+        font-weight: normal;
+        height: 155px;
+        width: 180px;
+        overflow: hidden;
+        line-height: 22px;
+        margin: 0 0 20px 0;
+
+    }
 
 
 
 
 
+
+
+
+
+
+    /* END updates_comments 320*/
 }
 
 
