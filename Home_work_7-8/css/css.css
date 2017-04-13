@@ -11,7 +11,7 @@ body {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
 
     /* Header 320*/
 
@@ -26,8 +26,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-
     }
 
     .content-header__main_logo {
@@ -38,13 +36,37 @@ body {
         margin-top: 70px;
     }
 
-    .content-header__home_button {
+    .content-header__main-menu {
+        margin: 30px 0 0 145px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .content-header__main-menu li {
+        display: inline-block;
+    }
+
+    .content-header__main-menu a {
         text-decoration: none;
         color: white;
         display: block;
         font-size: 20px;
         border-bottom: 2px solid #edbfff;
-        margin-top: 30px;
+    }
+
+
+    .content-header__main-menu--visibility-visible {
+        visibility: visible;
+
+    }
+
+    .content-header__main-menu--visibility {
+        visibility: hidden;
+    }
+
+    .slider-container {
+        margin-top: 100px;
+
     }
 
 
@@ -54,7 +76,7 @@ body {
         font-weight: normal;
         font-style: normal;
         text-shadow: rgb(82, 82, 82) 0 2px 2px;
-        margin: 120px 0 0 0;
+        margin: 0;
     }
 
     .slider__subtitle {
@@ -95,9 +117,6 @@ body {
         margin: 1px;
     }
 
-    .content-header__main-menu {
-        display: none;
-    }
     .slider__iphones-img {
         display: none;
     }
@@ -467,7 +486,8 @@ body {
     footer {
         background-image: url("../img/background_footer_320.png");
         text-align: center;
-
+        text-shadow: rgb(74, 74, 74) 0 1px 2px;
+        padding: 42px 0 122px 0;
     }
 
     .footer__designed_by {
@@ -486,22 +506,112 @@ body {
         margin-left: 3px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .content-header__main-menu--menu_footer {
+        display: none;
+    }
 
 
     /* END footer */
+}
+
+
+@media screen and (min-width: 480px) {
+    header {
+        background-image: url("../img/background_768.png");
+    }
+
+    .content-header {
+        width: 480px;
+    }
+
+    .slider-container {
+        display: flex;
+        justify-content: center;
+        width: 768px;
+        background: rgba(0,0,0,0.3);
+        margin-top: 95px;
+    }
+
+    .slider-container__slider {
+        width: 480px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider__slider_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    .slider__iphones-img {
+        display: block;
+        width: 180px;
+        height: 260px;
+        margin-top: -10px;
+    }
+
+    .content-header__pagination {
+        margin: 20px 0 60px 0;
+    }
+
+
+    .content-header__main-menu--visibility {
+        visibility: visible;
+    }
+
+    .content-header__main-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .content-header__main-menu li {
+
+    }
+
+    .content-header__main-menu li:first-child {
+        -webkit-border-top-left-radius: 8px;
+        -webkit-border-top-right-radius: 8px;
+    }
+
+    .content-header__main-menu a {
+        border: none;
+        display: block;
+        width: 240px;
+        height: 32px;
+        text-align: center;
+        padding-top: 8px;
+        background: rgba(45,36,50,0.8);
+    }
+
+
+
+    .border_radius_bot {
+        -webkit-border-bottom-left-radius: 8px;
+        -webkit-border-bottom-right-radius: 8px;
+    }
+
+    .content-header__main-menu a:hover {
+        background: rgba(45,36,50,0.9);
+
+    }
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+
 }
