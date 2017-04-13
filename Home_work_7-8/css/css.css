@@ -237,6 +237,7 @@ body {
     .updates_comments_container {
         display: flex;
         justify-content: center;
+        margin-bottom: 90px;
     }
 
     .updates_comments_container__updates_comments {
@@ -337,9 +338,10 @@ body {
         font-family: "Open Sans Light", Serif, sans-serif;
         font-size: 16px;
         color: #454545;
-        margin: 0;
+        margin: 0 0 20px 0;
         height: 20px;
         overflow: hidden;
+
     }
     
     .updates-article--first:before {
@@ -373,25 +375,106 @@ body {
     }
 
     .updates_comments__read_more {
-        fo
+        font-size: 18px;
+        text-decoration: none;
+        color: #454545;
+        float: right;
+        margin-right: 0px;
+    }
+
+    .clearfix:after {
+        content		: ".";
+        visibility	: hidden;
+        display		: block;
+        height		: 0;
+        clear		: both;
+    }
+
+    .updates_comments__line_and_pagination--full_screen_separator {
+        margin: 0;
+        padding: 0;
+        width: 480px;
+    }
+
+    /* END updates_comments 320*/
+
+
+
+    /* Brand logo */
+
+    .brands_logo_container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .brands_logo_container__brands_logo {
+        width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brands_logo__blabong {
+        background-image: url("../img/logo/blabong_logo.png");
+        width: 69px;
+        height: 64px;
+        margin: 0 53px 60px 0;
+
 
     }
 
+    .brands_logo__dc {
+        background-image: url("../img/logo/DC_logo.png");
+        width: 72px;
+        height: 64px;
+        margin: 0 53px 60px 0;
 
 
-    
+    }
+
+    .brands_logo__circa {
+        background-image: url("../img/logo/cirka_logo.png");
+        width: 65px;
+        height: 65px;
+        margin: 0 53px 60px 0;
+
+    }
+
+    .brands_logo__awsm {
+        background-image: url("../img/logo/awsm_logo.png");
+        width: 50px;
+        height: 63px;
+        margin: 0 53px 60px 0;
+
+    }
+
+    .brands_logo__rvca {
+        background-image: url("../img/logo/rvca_logo.png");
+        width: 103px;
+        height: 21px;
+        margin: 0 53px 60px 0;
+
+    }
+
+    .brands_logo__vonzipper {
+        background-image: url("../img/logo/vonzipper_logo.png");
+        height: 61px;
+        width: 78px;
+        margin: 0 53px 60px 0;
+
+    }
+
+    /* END Brand logo */
 
 
+    /* news */
+    .news_container {
+        display: none;
+    }
+    /*  END news */
 
 
-
-
-
-
-
-
-    /* END updates_comments 320*/
 }
-
-
-
