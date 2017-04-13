@@ -379,7 +379,7 @@ body {
         text-decoration: none;
         color: #454545;
         float: right;
-        margin-right: 0px;
+        margin-right: 20px;
     }
 
     .clearfix:after {
@@ -398,32 +398,26 @@ body {
 
     /* END updates_comments 320*/
 
-
-
     /* Brand logo */
 
     .brands_logo_container {
         display: flex;
         justify-content: center;
         margin-top: 50px;
-        align-items: center;
-        align-content: space-around;
     }
 
     .brands_logo_container__brands_logo {
         width: 320px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        align-items: center;
     }
 
     .brands_logo__blabong {
         background-image: url("../img/logo/blabong_logo.png");
         width: 69px;
         height: 64px;
-        margin: 0 53px 60px 0;
-
-
+        margin: 0 53px 60px 50px;
     }
 
     .brands_logo__dc {
@@ -431,32 +425,27 @@ body {
         width: 72px;
         height: 64px;
         margin: 0 53px 60px 0;
-
-
     }
 
     .brands_logo__circa {
         background-image: url("../img/logo/cirka_logo.png");
         width: 65px;
         height: 65px;
-        margin: 0 53px 60px 0;
-
+        margin: 0 53px 60px 50px;
     }
 
     .brands_logo__awsm {
         background-image: url("../img/logo/awsm_logo.png");
         width: 50px;
         height: 63px;
-        margin: 0 53px 60px 0;
-
+        margin: 0 53px 60px 13px;
     }
 
     .brands_logo__rvca {
         background-image: url("../img/logo/rvca_logo.png");
         width: 103px;
         height: 21px;
-        margin: 0 53px 60px 0;
-
+        margin: 0 53px 60px 16px;
     }
 
     .brands_logo__vonzipper {
@@ -464,11 +453,9 @@ body {
         height: 61px;
         width: 78px;
         margin: 0 53px 60px 0;
-
     }
 
     /* END Brand logo */
-
 
     /* news */
     .news_container {
@@ -476,5 +463,45 @@ body {
     }
     /*  END news */
 
+    /* footer */
+    footer {
+        background-image: url("../img/background_footer_320.png");
+        text-align: center;
 
+    }
+
+    .footer__designed_by {
+        font-size: 12px;
+        font-family: 'Open Sans', Serif, sans-serif;
+        color: white;
+        font-weight: 100;
+    }
+
+    .designed_by_link {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-family: 'Open Sans', Serif, sans-serif;
+        font-weight: 800;
+        margin-left: 3px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* END footer */
 }
