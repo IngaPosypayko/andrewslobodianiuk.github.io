@@ -260,7 +260,6 @@ body {
     }
 
     .updates_comments_container__updates_comments {
-        width: 320px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -522,6 +521,7 @@ body {
 
     .content-header {
         width: 480px;
+        position: relative;
     }
 
     .slider-container {
@@ -564,6 +564,8 @@ body {
     .content-header__main-menu {
         display: flex;
         flex-direction: column;
+        position: absolute;
+        margin: 124px 0 0 0;
     }
 
     .content-header__main-menu li {
@@ -594,13 +596,102 @@ body {
         border: none;
         display: block;
         padding-top: 8px;
+        height: 32px;
     }
 
     .content-header__main-menu li:first-child a {
         border-bottom: 2px solid #edbfff;
         width: 30px;
         margin-left: 104px;
+        height: auto;
+    }
 
+    .about_company_container__about_company_content {
+        width: 480px;
+    }
+
+    .about_company_content__article {
+        width: 413px;
+    }
+
+    .article__content {
+        width: 364px;
+    }
+
+    .article__read_me {
+        margin-left: 357px;
+    }
+
+    .article__read_me:hover {
+        margin-left: 357px;
+    }
+
+    .updates_comments__comments {
+        width: 480px;
+    }
+
+    .updates_comments__updates {
+        width: 338px;
+    }
+
+    .comments_title {
+        white-space: normal;
+    }
+
+    .comments__content {
+        width: 347px;
+    }
+
+    .pagination--comments {
+        margin: 0;
+    }
+
+    .brands_logo_container__brands_logo {
+        width: 480px;
+    }
+    .brands_logo__circa {
+        margin-left: 0;
+    }
+
+    .brands_logo__rvca {
+        margin-left: 28px;
+    }
+
+    .brands_logo__awsm {
+        margin-left: 38px;
+        margin-right: 30px;
+    }
+
+    .news_container {
+        background: #ececec;
+        display: flex;
+        justify-content: center;
+    }
+
+    .news_container__news_content {
+        width: 480px;
+    }
+
+    .news_content__copyright,
+    .news_content__news--comments {
+        display: none;
+    }
+
+    .news_content__news {
+        width: 440px;
+    }
+
+    .news__content {
+        line-height: 22px;
+        overflow: hidden;
+        height: 91px;
+        font-size: 16px;
+        font-family: 'Open Sans', Serif, sans-serif;
+        font-weight: 100;
+    }
+
+    .news_title {
+        margin: 0;
     }
 
 
@@ -610,10 +701,18 @@ body {
 
 
 
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
