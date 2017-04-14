@@ -161,7 +161,7 @@ body {
     }
 
     .article__content {
-        font-family: "Open Sans Light",Serif,sans-serif;
+        font-family: "Open Sans",Serif,sans-serif;
         font-size: 16px;
         color: white;
         font-weight: normal;
@@ -275,7 +275,7 @@ body {
     }
 
     .comments__content {
-        font-family: "Open Sans Light",Serif,sans-serif;
+        font-family: "Open Sans",Serif,sans-serif;
         font-size: 16px;
         color: #454545;
         font-weight: normal;
@@ -325,7 +325,7 @@ body {
     }
     .updates_article__title {
         font-size: 16px;
-        font-family: "Open Sans Extrabold", Serif, sans-serif;
+        font-family: "Open Sans", Serif, sans-serif;
         color: #454545;
         margin: 27px 0 2px 0;
         width: 215px;
@@ -334,7 +334,7 @@ body {
     }
 
     .updates_article__content {
-        font-family: "Open Sans Light", Serif, sans-serif;
+        font-family: "Open Sans", Serif, sans-serif;
         font-size: 16px;
         color: #454545;
         margin: 0;
@@ -373,7 +373,7 @@ body {
     }
 
     .updates_comments__read_more {
-        fo
+
 
     }
 
