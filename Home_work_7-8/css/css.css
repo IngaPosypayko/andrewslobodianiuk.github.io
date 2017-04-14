@@ -11,7 +11,7 @@ body {
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
 
     /* Header 320*/
 
@@ -26,8 +26,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-
     }
 
     .content-header__main_logo {
@@ -38,13 +36,37 @@ body {
         margin-top: 70px;
     }
 
-    .content-header__home_button {
+    .content-header__main-menu {
+        margin: 30px 0 0 145px;
+        padding: 0;
+        list-style: none;
+    }
+
+    .content-header__main-menu li {
+        display: inline-block;
+    }
+
+    .content-header__main-menu a {
         text-decoration: none;
         color: white;
         display: block;
         font-size: 20px;
         border-bottom: 2px solid #edbfff;
-        margin-top: 30px;
+    }
+
+
+    .content-header__main-menu--visibility-visible {
+        visibility: visible;
+
+    }
+
+    .content-header__main-menu--visibility {
+        visibility: hidden;
+    }
+
+    .slider-container {
+        margin-top: 100px;
+
     }
 
 
@@ -54,7 +76,7 @@ body {
         font-weight: normal;
         font-style: normal;
         text-shadow: rgb(82, 82, 82) 0 2px 2px;
-        margin: 120px 0 0 0;
+        margin: 0;
     }
 
     .slider__subtitle {
@@ -95,9 +117,6 @@ body {
         margin: 1px;
     }
 
-    .content-header__main-menu {
-        display: none;
-    }
     .slider__iphones-img {
         display: none;
     }
@@ -237,10 +256,10 @@ body {
     .updates_comments_container {
         display: flex;
         justify-content: center;
+        margin-bottom: 90px;
     }
 
     .updates_comments_container__updates_comments {
-        width: 320px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -337,9 +356,10 @@ body {
         font-family: "Open Sans", Serif, sans-serif;
         font-size: 16px;
         color: #454545;
-        margin: 0;
+        margin: 0 0 20px 0;
         height: 20px;
         overflow: hidden;
+
     }
     
     .updates-article--first:before {
@@ -373,13 +393,313 @@ body {
     }
 
     .updates_comments__read_more {
+<<<<<<< HEAD
+
+=======
+        font-size: 18px;
+        text-decoration: none;
+        color: #454545;
+        float: right;
+        margin-right: 20px;
+    }
+>>>>>>> f21b72d317458a94727e24ecc600c756518e432e
+
+    .clearfix:after {
+        content		: ".";
+        visibility	: hidden;
+        display		: block;
+        height		: 0;
+        clear		: both;
+    }
+
+    .updates_comments__line_and_pagination--full_screen_separator {
+        margin: 0;
+        padding: 0;
+        width: 480px;
+    }
+
+    /* END updates_comments 320*/
+
+    /* Brand logo */
+
+    .brands_logo_container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .brands_logo_container__brands_logo {
+        width: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .brands_logo__blabong {
+        background-image: url("../img/logo/blabong_logo.png");
+        width: 69px;
+        height: 64px;
+        margin: 0 53px 60px 50px;
+    }
+
+    .brands_logo__dc {
+        background-image: url("../img/logo/DC_logo.png");
+        width: 72px;
+        height: 64px;
+        margin: 0 53px 60px 0;
+    }
+
+    .brands_logo__circa {
+        background-image: url("../img/logo/cirka_logo.png");
+        width: 65px;
+        height: 65px;
+        margin: 0 53px 60px 50px;
+    }
+
+    .brands_logo__awsm {
+        background-image: url("../img/logo/awsm_logo.png");
+        width: 50px;
+        height: 63px;
+        margin: 0 53px 60px 13px;
+    }
+
+    .brands_logo__rvca {
+        background-image: url("../img/logo/rvca_logo.png");
+        width: 103px;
+        height: 21px;
+        margin: 0 53px 60px 16px;
+    }
+
+    .brands_logo__vonzipper {
+        background-image: url("../img/logo/vonzipper_logo.png");
+        height: 61px;
+        width: 78px;
+        margin: 0 53px 60px 0;
+    }
+
+    /* END Brand logo */
+
+    /* news */
+    .news_container {
+        display: none;
+    }
+    /*  END news */
+
+    /* footer */
+    footer {
+        background-image: url("../img/background_footer_320.png");
+        text-align: center;
+        text-shadow: rgb(74, 74, 74) 0 1px 2px;
+        padding: 42px 0 122px 0;
+    }
+
+    .footer__designed_by {
+        font-size: 12px;
+        font-family: 'Open Sans', Serif, sans-serif;
+        color: white;
+        font-weight: 100;
+    }
+
+    .designed_by_link {
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-family: 'Open Sans', Serif, sans-serif;
+        font-weight: 800;
+        margin-left: 3px;
+    }
+
+    .content-header__main-menu--menu_footer {
+        display: none;
+    }
 
 
+    /* END footer */
+}
+
+
+@media screen and (min-width: 480px) {
+    header {
+        background-image: url("../img/background_768.png");
+    }
+
+    .content-header {
+        width: 480px;
+        position: relative;
+    }
+
+    .slider-container {
+        display: flex;
+        justify-content: center;
+        width: 768px;
+        background: rgba(0,0,0,0.3);
+        margin-top: 95px;
+    }
+
+    .slider-container__slider {
+        width: 480px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider__slider_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20px;
+    }
+
+    .slider__iphones-img {
+        display: block;
+        width: 180px;
+        height: 260px;
+        margin-top: -10px;
+    }
+
+    .content-header__pagination {
+        margin: 20px 0 60px 0;
+    }
+
+
+    .content-header__main-menu--visibility {
+        visibility: visible;
+    }
+
+    .content-header__main-menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin: 124px 0 0 0;
+    }
+
+    .content-header__main-menu li {
+        width: 240px;
+        height: 40px;
+        background: rgba(45,36,50,0.8);
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .content-header__main-menu li:hover {
+        background: rgba(45,36,50,0.9);
+        border-bottom: 2px solid #edbfff;
+    }
+
+    .content-header__main-menu li:first-child {
+        -webkit-border-top-left-radius: 8px;
+        -webkit-border-top-right-radius: 8px;
+        border: none;
+    }
+
+    .content-header__main-menu li:last-child{
+        -webkit-border-bottom-left-radius: 8px;
+        -webkit-border-bottom-right-radius: 8px;
+    }
+
+    .content-header__main-menu a {
+        border: none;
+        display: block;
+        padding-top: 8px;
+        height: 32px;
+    }
+
+    .content-header__main-menu li:first-child a {
+        border-bottom: 2px solid #edbfff;
+        width: 30px;
+        margin-left: 104px;
+        height: auto;
+    }
+
+    .about_company_container__about_company_content {
+        width: 480px;
+    }
+
+    .about_company_content__article {
+        width: 413px;
+    }
+
+    .article__content {
+        width: 364px;
+    }
+
+    .article__read_me {
+        margin-left: 357px;
+    }
+
+    .article__read_me:hover {
+        margin-left: 357px;
+    }
+
+    .updates_comments__comments {
+        width: 480px;
+    }
+
+    .updates_comments__updates {
+        width: 338px;
+    }
+
+    .comments_title {
+        white-space: normal;
+    }
+
+    .comments__content {
+        width: 347px;
+    }
+
+    .pagination--comments {
+        margin: 0;
+    }
+
+    .brands_logo_container__brands_logo {
+        width: 480px;
+    }
+    .brands_logo__circa {
+        margin-left: 0;
+    }
+
+    .brands_logo__rvca {
+        margin-left: 28px;
+    }
+
+    .brands_logo__awsm {
+        margin-left: 38px;
+        margin-right: 30px;
+    }
+
+    .news_container {
+        background: #ececec;
+        display: flex;
+        justify-content: center;
+    }
+
+    .news_container__news_content {
+        width: 480px;
+    }
+
+    .news_content__copyright,
+    .news_content__news--comments {
+        display: none;
+    }
+
+    .news_content__news {
+        width: 440px;
+    }
+
+    .news__content {
+        line-height: 22px;
+        overflow: hidden;
+        height: 91px;
+        font-size: 16px;
+        font-family: 'Open Sans', Serif, sans-serif;
+        font-weight: 100;
+    }
+
+    .news_title {
+        margin: 0;
     }
 
 
 
-    
 
 
 
@@ -390,8 +710,17 @@ body {
 
 
 
-    /* END updates_comments 320*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
