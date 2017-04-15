@@ -744,29 +744,89 @@ body {
 
     }
 
+}
 
-    .about_company_container {
 
+@media screen and (min-width: 768px){
+    
+    header {
+        background: url("../img/background_960.jpg") center top;
+    }
+
+    .content-header {
+        width: 768px;
+
+
+    }
+
+    .content-header__main_logo {
+        margin: 70px 0 0 0;
+
+    }
+
+    .content-header__main-menu {
+        display: inline-block;
+        position: static;
+        margin: 35px 0 0 20px;
+        text-shadow: rgb(74, 74, 74) 0 1px 2px;
+
+    }
+
+    .content-header__main-menu li {
+        background: none;
+        width: auto;
+        margin: 0 48px 0 0;
+        height: 30px;
+
+    }
+
+    .content-header__main-menu li:first-child a{
+        border: none;
+        margin: 0;
+        width: auto;
+    }
+
+    .content-header__main-menu li:first-child a:hover {
+        border-bottom: 2px solid #edbfff;
+    }
+
+    .content-header__main-menu a {
+        padding: 0;
+        height: auto;
+        font-size: 24px;
+    }
+
+    .content-header__main-menu a:hover {
+        border-bottom: 2px solid #edbfff;
+
+    }
+
+    .content-header__main-menu li:hover {
+        background: none;
+        width: auto;
+        border: none;
+
+    }
+
+    .slider-container {
+        width: 960px;
 
 
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
