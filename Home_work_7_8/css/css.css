@@ -18,7 +18,8 @@ body {
     header {
         background: url("../img/background_480.png") center top;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .content-header {
@@ -755,12 +756,12 @@ body {
 
     .content-header {
         width: 768px;
-
+        align-items: flex-start;
 
     }
 
     .content-header__main_logo {
-        margin: 70px 0 0 0;
+        margin: 70px 0 0 20px;
 
     }
 
@@ -810,9 +811,58 @@ body {
 
     .slider-container {
         width: 960px;
+        margin:75px 0 150px 0;
+
+    }
+
+    .slider-container__slider {
+        width: 698px;
+        justify-content: space-between;
 
 
     }
+
+    .slider_content {
+        display: block;
+        color: white;
+        font-size: 16px;
+        font-weight: 100;
+        font-family: 'Open Sans', Serif, sans-serif;
+        height: 90px;
+        overflow: hidden;
+        line-height: 22px;
+        width: 279px;
+
+    }
+
+    .slider__title {
+        font-size: 42px;
+
+    }
+
+    .slider__subtitle {
+        font-size: 24px;
+
+    }
+
+    .slider__iphones-img {
+        width: 260px;
+        height: 370px;
+        margin: -20px 0 50px 0;
+    }
+
+    .content-header__pagination {
+        position: relative;
+        bottom: 119px;
+        left: 208px;
+        margin: 0;
+    }
+
+
+
+
+
+
 
 
     
