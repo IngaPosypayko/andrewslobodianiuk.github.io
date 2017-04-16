@@ -163,14 +163,13 @@ body {
 
 
     .about_company_container__about_company_content {
-        width: 320px;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
 
     .about_company_content__article {
-        width: 260px;
+        width: 80%;
     }
 
     .article__tittle {
@@ -186,7 +185,6 @@ body {
         color: white;
         font-weight: normal;
         height: 65px;
-        width: 200px;
         overflow: hidden;
         line-height: 22px;
         margin: 0 0 20px 0;
@@ -197,7 +195,7 @@ body {
           text-decoration: none;
           font-size: 18px;
           font-weight: normal;
-          margin-left: 202px;
+          float: right;
       }
 
     .article__read_me:hover {
@@ -206,7 +204,7 @@ body {
         font-size: 18px;
         font-weight: normal;
         text-shadow: rgb(255, 255, 255) 0 0 21px;
-        margin-left: 202px;
+
     }
 
     .about_company_content__article--left {
@@ -414,10 +412,12 @@ body {
         clear		: both;
     }
 
-    .updates_comments__line_and_pagination--full_screen_separator {
+    .full_screen_separator {
         margin: 0;
         padding: 0;
-        width: 480px;
+        width: 100%;
+        border-bottom: 1px solid #e6e6e6;
+
     }
 
     /* END updates_comments 320*/
@@ -428,56 +428,76 @@ body {
         display: flex;
         justify-content: center;
         background: #f9f9f9;
-        padding-top: 50px;
     }
 
     .brands_logo_container__brands_logo {
-        width: 320px;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: center;
+        padding: 0 0 75px 0;
+        margin: 0;
+        width: 65%;
     }
+
+    .brands_logo_container li {
+        list-style: none;
+        width: 103px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
 
     .brands_logo__blabong {
         background-image: url("../img/logo/blabong_logo.png");
         width: 69px;
         height: 64px;
-        margin: 0 53px 60px 50px;
+        display: block;
+        /*margin: 0 53px 60px 50px;*/
     }
+
+
 
     .brands_logo__dc {
         background-image: url("../img/logo/DC_logo.png");
         width: 72px;
         height: 64px;
-        margin: 0 53px 60px 0;
+        display: block;
+        /*margin: 0 53px 60px 0;*/
     }
 
     .brands_logo__circa {
         background-image: url("../img/logo/cirka_logo.png");
         width: 65px;
         height: 65px;
-        margin: 0 53px 60px 50px;
+        display: block;
+        /*margin: 0 53px 60px 50px;*/
     }
 
     .brands_logo__awsm {
         background-image: url("../img/logo/awsm_logo.png");
         width: 50px;
         height: 63px;
-        margin: 0 53px 60px 13px;
+        display: block;
+        /*margin: 0 53px 60px 13px;*/
     }
 
     .brands_logo__rvca {
         background-image: url("../img/logo/rvca_logo.png");
         width: 103px;
         height: 21px;
-        margin: 0 53px 60px 16px;
+        display: block;
+        /*margin: 0 53px 60px 16px;*/
     }
 
     .brands_logo__vonzipper {
         background-image: url("../img/logo/vonzipper_logo.png");
         height: 61px;
         width: 78px;
-        margin: 0 53px 60px 0;
+        display: block;
+        /*margin: 0 53px 60px 0;*/
     }
 
     /* END Brand logo */
