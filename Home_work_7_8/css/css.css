@@ -268,8 +268,19 @@ body {
     }
 
     .updates_comments__comments {
-        width: 260px;
-        margin: 85px 0 28px 0;
+        width: 80%;
+        margin: 85px 0 48px 0;
+
+    }
+
+    .comments__title_content_container {
+        background: white;
+        padding: 22px 36px 30px 30px;
+    }
+
+
+    .updates_comments__updates {
+        width: 95%;
 
     }
 
@@ -280,7 +291,7 @@ body {
         height: 51px;
         display: block;
         float: left;
-        margin: -7px 11px 0 0;
+        margin: 15px 11px 0 -21px;
     }
 
     .comments_title {
@@ -301,23 +312,15 @@ body {
         color: #454545;
         font-weight: normal;
         height: 155px;
-        width: 180px;
         overflow: hidden;
         line-height: 22px;
-        margin: 0 0 0 61px;
-    }
-
-    .updates_comments__line_and_pagination {
-        border-top: solid 1px #efefef;
-        width: 250px;
-        margin: 29px 0 23px 35px;
-        padding-top: 23px;
-        display: flex;
-        justify-content: center;
+        margin: 0;
     }
 
     .pagination--comments {
-        margin: 0;
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: center;
     }
 
     .pagination--comments a {
