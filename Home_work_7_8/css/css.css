@@ -10,6 +10,14 @@ body {
     font-family: leagueGothic, Serif,sans-serif;
 }
 
+.clearfix:after {
+    content		: ".";
+    visibility	: hidden;
+    display		: block;
+    height		: 0;
+    clear		: both;
+}
+
 
 @media screen and (min-width: 320px) {
 
@@ -345,12 +353,17 @@ body {
         font-weight: normal;
         margin: 0;
     }
+
+    .updates_article {
+        margin: 18px 0 20px 0;
+
+    }
+
     .updates_article__title {
         font-size: 16px;
         font-family: "Open Sans", Serif, sans-serif;
         color: #454545;
-        margin: 27px 0 2px 0;
-        width: 215px;
+        margin: 0 0 2px 0;
         height: 20px;
         overflow: hidden;
     }
@@ -359,7 +372,7 @@ body {
         font-family: "Open Sans", Serif, sans-serif;
         font-size: 16px;
         color: #454545;
-        margin: 0 0 20px 0;
+        margin: 0;
         height: 20px;
         overflow: hidden;
 
@@ -400,17 +413,9 @@ body {
         text-decoration: none;
         color: #454545;
         float: right;
-        margin-right: 20px;
+
     }
 
-
-    .clearfix:after {
-        content		: ".";
-        visibility	: hidden;
-        display		: block;
-        height		: 0;
-        clear		: both;
-    }
 
     .full_screen_separator {
         margin: 0;
@@ -433,7 +438,7 @@ body {
     .brands_logo_container__brands_logo {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         padding: 0 0 75px 0;
         margin: 0;
         width: 65%;
@@ -455,7 +460,7 @@ body {
         width: 69px;
         height: 64px;
         display: block;
-        /*margin: 0 53px 60px 50px;*/
+
     }
 
 
@@ -465,7 +470,7 @@ body {
         width: 72px;
         height: 64px;
         display: block;
-        /*margin: 0 53px 60px 0;*/
+
     }
 
     .brands_logo__circa {
@@ -473,7 +478,7 @@ body {
         width: 65px;
         height: 65px;
         display: block;
-        /*margin: 0 53px 60px 50px;*/
+
     }
 
     .brands_logo__awsm {
@@ -481,7 +486,7 @@ body {
         width: 50px;
         height: 63px;
         display: block;
-        /*margin: 0 53px 60px 13px;*/
+
     }
 
     .brands_logo__rvca {
@@ -489,7 +494,7 @@ body {
         width: 103px;
         height: 21px;
         display: block;
-        /*margin: 0 53px 60px 16px;*/
+
     }
 
     .brands_logo__vonzipper {
@@ -497,7 +502,7 @@ body {
         height: 61px;
         width: 78px;
         display: block;
-        /*margin: 0 53px 60px 0;*/
+
     }
 
     /* END Brand logo */
@@ -554,7 +559,7 @@ body {
     .slider-container {
         display: flex;
         justify-content: center;
-        width: 768px;
+        width: 100%;
         background: rgba(0,0,0,0.3);
         margin-top: 95px;
     }
@@ -633,32 +638,14 @@ body {
         height: auto;
     }
 
-    .about_company_container__about_company_content {
-        width: 480px;
-    }
 
     .about_company_content__article {
-        width: 413px;
+        width: 88%;
     }
 
-    .article__content {
-        width: 364px;
-    }
-
-    .article__read_me {
-        margin-left: 357px;
-    }
-
-    .article__read_me:hover {
-        margin-left: 357px;
-    }
-
-    .updates_comments__comments {
-        width: 480px;
-    }
 
     .updates_comments__updates {
-        width: 338px;
+        width: 66%;
     }
 
     .comments_title {
@@ -666,27 +653,11 @@ body {
     }
 
     .comments__content {
-        width: 347px;
+        margin-top: 20px;
     }
 
     .pagination--comments {
-        margin: 0;
-    }
-
-    .brands_logo_container__brands_logo {
-        width: 480px;
-    }
-    .brands_logo__circa {
-        margin-left: 0;
-    }
-
-    .brands_logo__rvca {
-        margin-left: 28px;
-    }
-
-    .brands_logo__awsm {
-        margin-left: 38px;
-        margin-right: 30px;
+        margin: 20px 0 0 0;
     }
 
     .news_container {
@@ -696,8 +667,10 @@ body {
     }
 
     .news_container__news_content {
-        width: 480px;
         margin: 80px 0 30px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .news_content__copyright,
@@ -706,7 +679,7 @@ body {
     }
 
     .news_content__news {
-        width: 440px;
+        width: 91%;
         margin-bottom: 55px;
     }
 
@@ -835,7 +808,7 @@ body {
     }
 
     .slider-container {
-        width: 960px;
+        width: 100%;
         margin:75px 0 150px 0;
 
     }
@@ -884,37 +857,96 @@ body {
     }
 
     .about_company_container__about_company_content {
-        width: 768px;
-        padding: 75px 20px 65px 20px;
-        justify-content: space-between;
+        justify-content: space-around;
+        width: 100%;
     }
 
     .about_company_content__article {
-        width: 211px;
-        margin: 0;
-
+        width: 27%;
+        margin: 75px 0 65px 0;
     }
 
     .article__content {
-        width: 154px;
         height: 130px;
-        margin: 0;
+        margin: 10px 0 9px 46px;
 
     }
 
-    .article__read_me {
-        margin-left: 140px;
-    }
-
-    .article__read_me:hover {
-        margin-left: 140px;
-
+    .updates_comments_container {
+        padding: 0;
     }
 
     .pagination--comments {
         position: static;
+        margin-top: 21px;
 
     }
+
+
+    .updates_comments__comments {
+        width: 43%;
+        margin: 100px 0 70px 0;
+    }
+
+    .updates_comments__updates {
+        width: 42%;
+        margin-top: 125px;
+    }
+
+    .updates_comments_container__updates_comments {
+        justify-content: space-around;
+    }
+
+    .brands_logo_container__brands_logo {
+        width:100%;
+        padding: 0;
+
+    }
+
+    .brands_logo_container__brands_logo li {
+        margin: 25px 0;
+    }
+
+    .news_container__news_content {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .news_content__news {
+        width: 26%;
+    }
+
+    .news__content {
+        height: 155px;
+    }
+
+    footer {
+        background-image: url("../img/background_footer_960.png");
+        text-align: start;
+        padding: 40px 20px 130px 20px;
+    }
+
+
+    .content-header__main-menu--menu_footer {
+        margin: 0;
+    }
+
+
+
+   .content-header__main-menu--menu_footer a {
+       font-size: 20px;
+   }
+
+   .footer__designed_by {
+       float: right;
+       margin-top: 48px;
+   }
+
+
+
+
+
 
 
 
