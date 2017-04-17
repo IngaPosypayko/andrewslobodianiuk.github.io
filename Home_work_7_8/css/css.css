@@ -32,6 +32,7 @@ body {
 
     .content-header {
         width: 320px;
+        max-width: 960px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -174,6 +175,7 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        max-width: 960px;
     }
 
     .about_company_content__article {
@@ -271,6 +273,7 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        max-width: 960px;
     }
 
     .updates_comments__comments {
@@ -442,6 +445,7 @@ body {
         padding: 0 0 75px 0;
         margin: 0;
         width: 65%;
+        max-width: 960px;
     }
 
     .brands_logo_container li {
@@ -552,7 +556,6 @@ body {
     }
 
     .content-header {
-        width: 480px;
         position: relative;
     }
 
@@ -565,16 +568,16 @@ body {
     }
 
     .slider-container__slider {
-        width: 480px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        width: 84%;
+
     }
 
     .slider__slider_text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-right: 20px;
     }
 
     .slider__iphones-img {
@@ -671,6 +674,7 @@ body {
         display: flex;
         align-items: center;
         flex-direction: column;
+        max-width: 960px;
     }
 
     .news_content__copyright,
@@ -814,11 +818,15 @@ body {
     }
 
     .slider-container__slider {
-        width: 698px;
+        width: 90%;
         justify-content: space-between;
 
-
     }
+
+    .slider__slider_text {
+        width: 39%;
+    }
+
 
     .slider_content {
         display: block;
@@ -829,9 +837,8 @@ body {
         height: 90px;
         overflow: hidden;
         line-height: 22px;
-        width: 279px;
-
     }
+
 
     .slider__title {
         font-size: 42px;
@@ -858,7 +865,6 @@ body {
 
     .about_company_container__about_company_content {
         justify-content: space-around;
-        width: 100%;
     }
 
     .about_company_content__article {
@@ -941,6 +947,121 @@ body {
    .footer__designed_by {
        float: right;
        margin-top: 48px;
+   }
+
+
+   @media screen and (min-width: 960px){
+       
+      .content-header {
+          width: 960px;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin: 65px 0 0 0;
+      }
+
+       .content-header__main_logo {
+           margin: 0;
+
+       }
+
+       .content-header__main-menu {
+           margin: 0;
+       }
+
+       .content-header__main-menu li:last-child {
+           margin: 0;
+       }
+
+       .slider-container {
+           margin-top: 170px;
+
+       }
+
+       .slider-container__slider {
+           width: 960px;
+       }
+
+       .slider__slider_text {
+           width: 52%;
+       }
+
+       .slider__title {
+           font-size: 60px;
+       }
+
+       .slider__subtitle {
+           font-size: 32px;
+       }
+
+       .slider_content {
+           font-size: 18px;
+           height: 132px;
+       }
+
+       .content-header__pagination {
+           bottom: 58px;
+           left: 274px;
+       }
+
+       .slider__iphones-img {
+           margin-right: 74px;
+       }
+
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    }
 
 
