@@ -931,6 +931,7 @@ body {
         background-image: url("../img/background_footer_960.png");
         text-align: start;
         padding: 40px 20px 130px 20px;
+        max-width: 960px;
     }
 
 
@@ -1007,6 +1008,62 @@ body {
        .slider__iphones-img {
            margin-right: 74px;
        }
+
+       .news_content__news--first {
+           display: none;
+       }
+
+       .news_content__copyright {
+           display: block;
+           width: 26%;
+           margin-bottom: 55px;
+
+       }
+
+       .copyright__content {
+           height: 106px;
+           line-height: 22px;
+           overflow: hidden;
+           font-size: 16px;
+           font-family: 'Open Sans', Serif, sans-serif;
+           font-weight: 100;
+           color: #787878;
+           margin: 6px 0 0 0;
+       }
+
+       .copyright__copyright {
+           margin: 0;
+           font-size: 16px;
+           color: #c5c5c5;
+           font-style: italic;
+           font-family: Georgia, sans-serif, Serif
+       }
+
+       .copyright__title {
+           font-size: 48px;
+           margin: 0 0 0 0;
+           font-weight: lighter;
+           word-spacing: -.15em;
+           color: #454545;
+       }
+
+       .logo_ER_grey {
+           color: #b9b9b9;
+       }
+
+       footer {
+           background: url("../img/background_footer_1920.png");
+           padding: 0;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+
+       }
+
+
+
+
+
 
 
 
