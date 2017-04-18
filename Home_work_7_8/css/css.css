@@ -718,6 +718,7 @@ body {
         width: auto;
         margin: 0 20px 0 0;
         height: auto;
+        display: inline-block;
 
     }
 
@@ -761,12 +762,25 @@ body {
 
     }
 
+
+    .main_menu__submenu {
+        visibility: visible;
+    }
+
     .content-header__main-menu {
-        display: inline-block;
         position: static;
         margin: 35px 0 0 20px;
         text-shadow: rgb(74, 74, 74) 0 1px 2px;
 
+    }
+
+    .main_menu__submenu {
+        left: 100px;
+        bottom: 0;
+    }
+
+    .main_menu__submenu li {
+        display: inline-block;
     }
 
     .content-header__main-menu li {
@@ -909,7 +923,7 @@ body {
 
     .news_container__news_content {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
 
@@ -925,7 +939,6 @@ body {
         background-image: url("../img/background_footer_960.png");
         text-align: start;
         padding: 40px 20px 130px 20px;
-        max-width: 960px;
     }
 
 
@@ -933,9 +946,7 @@ body {
         margin: 0;
     }
 
-
-
-   .content-header__main-menu--menu_footer a {
+    .content-header__main-menu--menu_footer a {
        font-size: 20px;
    }
 
@@ -951,7 +962,6 @@ body {
           width: 960px;
           flex-direction: row;
           align-items: center;
-          justify-content: space-between;
           margin: 65px 0 0 0;
       }
 
@@ -961,7 +971,13 @@ body {
        }
 
        .content-header__main-menu {
-           margin: 0;
+           margin: 0 0 0 188px;
+       }
+
+       .main_menu__submenu {
+           left: 420px;
+           bottom: 3px;
+
        }
 
        .content-header__main-menu li:last-child {
@@ -1046,12 +1062,27 @@ body {
        }
 
        footer {
-           background: url("../img/background_footer_1920.png");
+           background: url("../img/background_footer_1920.png") center;
            padding: 0;
+           display: flex;
+           justify-content: center;
+       }
+
+       .footer__content {
            display: flex;
            justify-content: space-between;
            align-items: center;
+           width: 960px;
+           padding:43px 0 30px 0;
 
+       }
+
+       .content-header__main-menu--menu_footer {
+           margin: 0;
+       }
+
+       .footer__designed_by {
+           margin: 0;
        }
 
 
