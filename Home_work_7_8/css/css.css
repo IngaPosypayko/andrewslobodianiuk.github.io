@@ -94,8 +94,6 @@ body {
         -webkit-border-top-right-radius: 8px;
         -moz-border-radius-topleft: 8px;
         -moz-border-radius-topright: 8px;
-        -ms-border-top-left-radius: 8px;
-        -ms-border-top-right-radius: 8px;
         background: rgba(45,36,50,0.8);
 
 
@@ -106,9 +104,6 @@ body {
         -webkit-border-bottom-right-radius: 8px;
         -moz-border-radius-bottomleft: 8px;
         -moz-border-radius-bottomright: 8px;
-        -ms-border-bottom-left-radius: 8px;
-        -ms-border-bottom-right-radius: 8px;
-
     }
 
     .content-header__main-menu a {
