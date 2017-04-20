@@ -19,6 +19,8 @@ body {
 }
 
 
+
+
 @media screen and (min-width: 320px) {
 
     /* Header 320*/
@@ -28,11 +30,15 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        min-width: 20rem;
+        max-width: 120rem;
+        width: 100%;
+        padding-top: 70px;
+
     }
 
     .content-header {
-        width: 320px;
-        max-width: 960px;
+        max-width: 60rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -45,7 +51,6 @@ body {
         width: 152px;
         height: 39px;
         display: block;
-        margin-top: 70px;
     }
 
     .content-header__main-menu--first_button:hover>.main_menu__submenu {
@@ -126,6 +131,8 @@ body {
 
     .slider-container {
         margin-top: 100px;
+
+
     }
 
 
@@ -176,7 +183,7 @@ body {
         margin: 1px;
     }
 
-    .slider__iphones-img {
+    .slider__img_container {
         display: none;
     }
 
@@ -300,6 +307,9 @@ body {
         display: flex;
         justify-content: center;
         -webkit-box-shadow: 0 0 18px 0 rgba(84,84,84,1);
+        min-width: 20rem;
+        max-width: 120rem;
+        width: 100%;
     }
 
 
@@ -307,7 +317,8 @@ body {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        max-width: 960px;
+        max-width: 60rem;
+        padding-top: 70px;
     }
 
     .about_company_content__article {
@@ -349,9 +360,6 @@ body {
 
     }
 
-    .about_company_content__article--left {
-        margin-top: 70px;
-    }
 
     .about_company_content__article--left:before {
         background: url("../img/icons/about_company_block_icon.png") -37px -4px;
@@ -399,18 +407,24 @@ body {
         justify-content: center;
         background: #f9f9f9;
         padding-bottom: 90px;
+        min-width: 20rem;
+        max-width: 120rem;
+        width: 100%;
+        border-bottom: 1px solid #e6e6e6;
+
     }
 
     .updates_comments_container__updates_comments {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        max-width: 960px;
+        max-width: 60rem;
+        padding-top: 85px;
     }
 
     .updates_comments__comments {
         width: 80%;
-        margin: 85px 0 48px 0;
+        margin: 0 0 48px 0;
 
     }
 
@@ -570,16 +584,6 @@ body {
         text-decoration: none;
         color: #454545;
         float: right;
-
-    }
-
-
-    .full_screen_separator {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        border-bottom: 1px solid #e6e6e6;
-
     }
 
     /* END updates_comments 320*/
@@ -590,22 +594,24 @@ body {
         display: flex;
         justify-content: center;
         background: #f9f9f9;
+        min-width: 20rem;
+        max-width: 120rem;
+        width: 100%;
+        padding: 0 0 75px 0;
     }
 
     .brands_logo_container__brands_logo {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        padding: 0 0 75px 0;
         margin: 0;
-        width: 65%;
-        max-width: 960px;
+        max-width: 60rem;
+        padding: 0;
     }
 
     .brands_logo_container li {
         list-style: none;
-        width: 103px;
-        height: 64px;
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -618,9 +624,7 @@ body {
         width: 69px;
         height: 64px;
         display: block;
-
     }
-
 
 
     .brands_logo__dc {
@@ -668,6 +672,9 @@ body {
     /* news */
     .news_container {
         display: none;
+        min-width: 20rem;
+        max-width: 120rem;
+        width: 100%;
     }
     /*  END news */
 
@@ -676,8 +683,16 @@ body {
         background-image: url("../img/background_footer_320.png");
         text-align: center;
         text-shadow: rgb(74, 74, 74) 0 1px 2px;
+        min-width: 20rem;
+        max-width: 120rem;
+        width: 100%;
+    }
+
+    .footer__content {
         padding: 42px 0 122px 0;
     }
+
+
 
     .footer__designed_by {
         font-size: 12px;
@@ -717,6 +732,8 @@ body {
         display: flex;
         justify-content: center;
         width: 100%;
+        min-width: 20rem;
+        max-width: 120rem;
         background: rgba(0,0,0,0.3);
         margin-top: 95px;
     }
@@ -725,6 +742,7 @@ body {
         display: flex;
         justify-content: space-between;
         width: 84%;
+        max-width: 60rem;
 
     }
 
@@ -734,10 +752,14 @@ body {
         justify-content: center;
     }
 
+    .slider__img_container {
+        display: block;
+        width: 44%;
+    }
+
     .slider__iphones-img {
         display: block;
-        width: 180px;
-        height: 260px;
+        max-width: 100%;
         margin-top: -10px;
     }
 
@@ -770,14 +792,15 @@ body {
         background: #ececec;
         display: flex;
         justify-content: center;
+        padding-top: 80px;
     }
 
     .news_container__news_content {
-        margin: 80px 0 30px 0;
+        margin: 0 0 30px 0;
         display: flex;
         align-items: center;
         flex-direction: column;
-        max-width: 960px;
+        max-width: 60rem;
     }
 
     .news_content__copyright,
@@ -806,12 +829,19 @@ body {
         font-size: 24px;
         color: #454545;
         font-weight: normal;
+    }
+
+    .brands_logo_container li {
+        width: 33%;
 
     }
 
 
     footer {
         background: url("../img/background_footer_768.png");
+    }
+
+    .footer__content {
         padding-bottom: 64px;
     }
 
@@ -861,13 +891,13 @@ body {
     }
 
     .content-header {
-        width: 768px;
+        width: 48rem;
         align-items: flex-start;
 
     }
 
     .content-header__main_logo {
-        margin: 70px 0 0 20px;
+        margin: 0 0 0 20px;
 
     }
 
@@ -928,7 +958,6 @@ body {
     }
 
     .slider-container {
-        width: 100%;
         margin: 75px 0 150px 0;
 
     }
@@ -961,12 +990,13 @@ body {
 
     .slider__subtitle {
         font-size: 24px;
+    }
 
+    .slider__img_container {
+        width: 38%;
     }
 
     .slider__iphones-img {
-        width: 260px;
-        height: 370px;
         margin: -20px 0 50px 0;
     }
 
@@ -983,7 +1013,7 @@ body {
 
     .about_company_content__article {
         width: 27%;
-        margin: 75px 0 65px 0;
+        margin: 0 0 65px 0;
     }
 
     .article__content {
@@ -1002,18 +1032,25 @@ body {
 
     }
 
+
+
     .updates_comments__comments {
         width: 43%;
-        margin: 100px 0 70px 0;
+        margin: 0 0 70px 0;
     }
 
     .updates_comments__updates {
         width: 42%;
-        margin-top: 125px;
+        margin-top: 25px;
     }
 
     .updates_comments_container__updates_comments {
         justify-content: space-around;
+        padding-top: 100px;
+    }
+
+    .brands_logo_container {
+        padding: 0;
     }
 
     .brands_logo_container__brands_logo {
@@ -1024,6 +1061,7 @@ body {
 
     .brands_logo_container__brands_logo li {
         margin: 25px 0;
+        width: auto;
     }
 
     .news_container__news_content {
@@ -1043,7 +1081,11 @@ body {
     footer {
         background-image: url("../img/background_footer_960.png");
         text-align: start;
+    }
+
+    .footer__content {
         padding: 40px 20px 130px 20px;
+
     }
 
     .content-header__main-menu--menu_footer {
@@ -1063,12 +1105,18 @@ body {
 
 
 @media screen and (min-width: 960px){
+
+
+        header {
+            padding-top: 65px;
+        }
        
-      .content-header {
-          width: 960px;
+
+       .content-header {
+          width: 60rem;
           flex-direction: row;
           align-items: center;
-          margin: 65px 0 0 0;
+          padding-top: 65px;
       }
 
        .content-header__main_logo {
@@ -1096,7 +1144,7 @@ body {
        }
 
        .slider-container__slider {
-           width: 960px;
+           width: 100%;
        }
 
        .slider__slider_text {
@@ -1121,9 +1169,10 @@ body {
            left: 274px;
        }
 
-       .slider__iphones-img {
-           margin-right: 74px;
-       }
+        .slider__img_container {
+            width: 34%;
+        }
+
 
        .news_content__news--first {
            display: none;
@@ -1169,7 +1218,6 @@ body {
 
        footer {
            background: url("../img/background_footer_1920.png") center;
-           padding: 0;
            display: flex;
            justify-content: center;
        }
@@ -1178,8 +1226,8 @@ body {
            display: flex;
            justify-content: space-between;
            align-items: center;
-           width: 960px;
-           padding:43px 0 30px 0;
+           width: 60rem;
+           padding:43px 2px 30px 2px;
 
        }
 
