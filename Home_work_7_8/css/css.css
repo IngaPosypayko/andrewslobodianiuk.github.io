@@ -1116,7 +1116,6 @@ body {
           width: 60rem;
           flex-direction: row;
           align-items: center;
-          padding-top: 65px;
       }
 
        .content-header__main_logo {
