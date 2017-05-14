@@ -1,6 +1,7 @@
 'use strict';
 
 var listOfNames = [];
+
 for (var i = 0; i < 5; i++) {
     listOfNames.push(prompt('Enter the name'));
 }
@@ -8,7 +9,7 @@ for (var i = 0; i < 5; i++) {
 var enteredName = prompt('Submit your name');
 
 for (var i = 0; i < listOfNames.length; i++) {
-    
+
         if (enteredName.toLowerCase() == listOfNames[i].toLowerCase()){
             break
         }
