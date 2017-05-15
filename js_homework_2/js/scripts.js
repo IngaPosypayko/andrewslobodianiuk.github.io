@@ -8,14 +8,14 @@ for (var i = 0; i < 5; i++) {
 
 var enteredName = prompt('Submit your name');
 
-for (var i = 0; i < listOfNames.length; i++) {
+for (i = 0; i < listOfNames.length; i++) {
 
-        if (enteredName.toLowerCase() == listOfNames[i].toLowerCase()){
+        if (enteredName === listOfNames[i]){
             break;
         }
 }
 
-if (enteredName.toLowerCase() == listOfNames[i].toLowerCase()) {
+if (enteredName === listOfNames[i]){
     alert(enteredName + ', вы успешно вошли!');
 
 } else {
