@@ -30,6 +30,10 @@
 
  for (var i = 0; i < 5; i++) {
      listOfNames.push(prompt('Enter the name'));
+     if (listOfNames[i] === '' || listOfNames[i] === null){
+         alert('Ошибка, введите имя');
+         break;
+     }
  }
 
  var enteredName = prompt('Submit your name');
