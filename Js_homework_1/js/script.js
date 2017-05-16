@@ -22,7 +22,7 @@ function mathPow(numberStatic, degreeStatic) {
             return result;
         } else {
             degreeStatic = degreeStatic * (-1);
-                for (i = 1; i <= degreeStatic - 1; i++) {
+                for (var j = 1; j <= degreeStatic - 1; j++) {
                     result = number * numberStatic;
                     number = result;
                 }
