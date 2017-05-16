@@ -31,15 +31,20 @@
  for (var i = 0; i < 5; i++) {
      listOfNames.push(prompt('Enter the name'));
      if (listOfNames[i] === '' || listOfNames[i] === null){
-         alert('Ошибка, введите имя');
+         alert('Ошибка, введите имя!');
          break;
      }
  }
 
  var enteredName = prompt('Submit your name');
 
- if (listOfNames.indexOf(enteredName) === (-1) || enteredName === '' || enteredName === null){
-     alert('Ошибка');
+
+ if (enteredName === '' || enteredName === null) {
+     alert('Ошибка, введите свое имя!');
+ }
+
+ if (listOfNames.indexOf(enteredName) === (-1) ){
+     alert('Ошибка, имя пользователя не сущетвует!');
 
  } else {
      alert(enteredName + ',Вы успешно вошли!');
