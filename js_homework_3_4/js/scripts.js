@@ -32,16 +32,11 @@ var test = {
                 fieldset.appendChild(label);
                 label.innerHTML = test.data.questions[i].answers[j];
                 label.style.display = 'block';
-                // label.setAttribute('for','checkbox');
-
 
                 var input = document.createElement('input');
                 label.insertBefore(input, label.childNodes[0]);
                 input.setAttribute('type','checkbox');
-                // input.id = 'checkbox';
-
             }
-
         }
 
         var button = document.createElement('input');
