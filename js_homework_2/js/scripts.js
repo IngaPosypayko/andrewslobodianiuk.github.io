@@ -38,7 +38,6 @@
 
  var enteredName = prompt('Submit your name');
 
-
  if (enteredName === '' || enteredName === null) {
      alert('Ошибка, введите свое имя!');
  }
@@ -50,6 +49,10 @@
      alert(enteredName + ',Вы успешно вошли!');
 
  }
+
+
+
+
 
 
 
