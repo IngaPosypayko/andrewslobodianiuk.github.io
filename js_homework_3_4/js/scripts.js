@@ -30,12 +30,16 @@ var test = {
 
                 var input = document.createElement('input');
                 label.insertBefore(input, label.childNodes[0]);
+                input.setAttribute('type','checkbox');
+
             }
 
         }
 
-
-
+        var button = document.createElement('input');
+        div.appendChild(button);
+        button.setAttribute('type','submit');
+        button.setAttribute('value','Проверить мои результаты');
 
     },
 
