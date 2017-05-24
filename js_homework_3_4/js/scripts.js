@@ -11,26 +11,26 @@ var test = {
         div.appendChild(block);
 
         var titleTest = document.createElement('h4');
-        titleTest.innerHTML = test.data.title;
+        titleTest.innerHTML = this.data.title;
         block.appendChild(titleTest);
 
         var form = document.createElement('form');
         block.appendChild(form);
 
-        for (var i = 0; i < test.data.questions.length; i++) {
+        for (var i = 0; i < this.data.questions.length; i++) {
 
             var fieldset = document.createElement('fieldset');
             form.appendChild(fieldset);
 
             var legend = document.createElement('legend');
-            legend.innerHTML = test.data.questions[i].title;
+            legend.innerHTML = this.data.questions[i].title;
             fieldset.appendChild(legend);
 
-            for (var j = 0; j < test.data.questions[i].answers.length; j++) {
+            for (var j = 0; j < this.data.questions[i].answers.length; j++) {
 
                 var label = document.createElement('label');
                 fieldset.appendChild(label);
-                label.innerHTML = test.data.questions[i].answers[j];
+                label.innerHTML = this.data.questions[i].answers[j];
                 label.style.display = 'block';
 
                 var input = document.createElement('input');
