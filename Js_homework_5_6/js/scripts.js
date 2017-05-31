@@ -5,7 +5,8 @@
 
 
 
-        var timer = document.createElement('div');
+
+    var timer = document.createElement('div');
     timer.setAttribute('class', 'timer');
     document.body.appendChild(timer);
 
@@ -87,8 +88,6 @@
 
 
 })();
-
-
 
 
 
