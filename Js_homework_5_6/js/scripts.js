@@ -3,6 +3,8 @@
 
 (function () {
 
+
+
         var timer = document.createElement('div');
     timer.setAttribute('class', 'timer');
     document.body.appendChild(timer);
@@ -84,25 +86,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 })();
+
+
+
+
+
+
+
+
 
 
 
