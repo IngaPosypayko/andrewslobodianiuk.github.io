@@ -200,6 +200,7 @@ var Timer = function () {
 
     this.onAction = false;
     this.pause = false;
+    this.continued = true;
 
     this.startTimer = function () {
         if (!this.onAction) {
@@ -216,23 +217,19 @@ var Timer = function () {
             this.continued = false;
         }
 
-        else if (!this.continued) {
-            this.startAfterPause = new Date();
-            
-            this.deltaTimeAfterPause = Date.now() - this.startAfterPause + (this.startAfterPause - this.startTime);
 
-            console.log(this.deltaTimeAfterPause);
+            if (!this.continued) {
 
-            this.timerString(this.deltaTimeAfterPause);
-            
-            this.updateTimeStringAfterPause = setInterval(this.timerString(this.deltaTime), 1);
-        }
+                console.log('hilo');
+
+            }
+
     };
 
 
     this.stop = function () {
         clearInterval(this.updateTimeString);
-        clearInterval(this.updateTimeStringAfterPause);
+
         this.onAction = false;
         document.getElementById('timer').innerHTML = '00:00:00:00:000';
         document.querySelector('button').innerHTML = 'Старт';
@@ -243,7 +240,7 @@ var Timer = function () {
     };
 
 
-    this.timerString = function ( start) {
+    this.timerString = function () {
 
         this.deltaTime  =  Date.now() - this.startTime;
 
