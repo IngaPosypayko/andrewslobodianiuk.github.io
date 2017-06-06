@@ -40,10 +40,10 @@ var Timer = function () {
     this.startTimer = function () {
         switch (this.flag) {
             case 0:
+                this.timePause = 0;
                 this.startTime = new Date();
                 this.updateTimeString = setInterval(this.timerString.bind (this), 1);
                 document.querySelector('button').innerHTML = 'Пауза';
-                this.timePause = 0;
                 this.flag = 1;
                 break;
 
