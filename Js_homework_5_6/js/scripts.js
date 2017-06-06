@@ -198,44 +198,40 @@ var Timer = function () {
 
     };
 
-    this.onAction = false;
-    this.pause = false;
-    this.continued = true;
+    this.flag = 0;
 
     this.startTimer = function () {
-        if (!this.onAction) {
-            this.startTime = new Date();
-            this.updateTimeString = setInterval(this.timerString.bind (this), 1);
-            this.onAction = true;
-            document.querySelector('button').innerHTML = 'Пауза';
+        switch (this.flag) {
+            case 0:
+                this.startTime = new Date();
+                this.updateTimeString = setInterval(this.timerString.bind (this), 1);
+                document.querySelector('button').innerHTML = 'Пауза';
+                this.flag = 1;
+                break;
 
+            case 1:
+                clearInterval(this.updateTimeString);
+                document.querySelector('button').innerHTML = 'Продолжить';
+                this.flag = 2;
+                break;
 
-        } else if (!this.pause) {
-            clearInterval(this.updateTimeString);
-            document.querySelector('button').innerHTML = 'Продолжить';
-            this.pause = true;
-            this.continued = false;
+            case 2:
+                this.startTime = +new Date();
+                console.log(this.startTime);
+                this.updateTimeString = setInterval(this.timerString.bind (this), 1);
+                this.flag = 1;
+                document.querySelector('button').innerHTML = 'Пауза';
+                break;
         }
-
-
-            if (!this.continued) {
-
-                console.log('hilo');
-
-            }
 
     };
 
 
     this.stop = function () {
         clearInterval(this.updateTimeString);
-
-        this.onAction = false;
         document.getElementById('timer').innerHTML = '00:00:00:00:000';
         document.querySelector('button').innerHTML = 'Старт';
-        this.continued = true;
-        this.onAction = false;
-        this.pause = false;
+        this.flag = 0;
 
     };
 
