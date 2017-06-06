@@ -36,11 +36,12 @@ var Timer = function () {
     };
 
     this.flag = 0;
+    this.deltaTime = null;
+    this.timePause = 0;
 
     this.startTimer = function () {
         switch (this.flag) {
             case 0:
-                this.timePause = 0;
                 this.startTime = new Date();
                 this.updateTimeString = setInterval(this.timerString.bind (this), 1);
                 document.querySelector('button').innerHTML = 'Пауза';
@@ -50,7 +51,8 @@ var Timer = function () {
             case 1:
                 clearInterval(this.updateTimeString);
                 document.querySelector('button').innerHTML = 'Продолжить';
-                this.timePause = +new Date() - this.startTime;
+                this.timePause = this.deltaTime;
+                console.log(this.deltaTime);
                 this.flag = 2;
                 break;
 
@@ -58,6 +60,7 @@ var Timer = function () {
                 // данная дата больше по милисикундам чем дата с this.timePause +new Date() и получаеться что ломаеться логика так как получаеться 90 - 100 = -10 и минус 10 передаеться в тамстринг
                 this.startTime = +new Date();
                 this.updateTimeString = setInterval(this.timerString.bind (this), 1);
+                console.log(this.deltaTime);
                 this.flag = 1;
                 document.querySelector('button').innerHTML = 'Пауза';
                 break;
@@ -70,6 +73,7 @@ var Timer = function () {
         clearInterval(this.updateTimeString);
         document.getElementById('timer').innerHTML = '00:00:00:00:000';
         document.querySelector('button').innerHTML = 'Старт';
+        this.timePause = 0;
         this.flag = 0;
 
     };
@@ -79,24 +83,26 @@ var Timer = function () {
 
         this.deltaTime  =  Date.now() - this.startTime + this.timePause;
 
+        var numbers = this.deltaTime;
+
         var msecMinute = 1000 * 60;
             var msecHour = msecMinute * 60;
             var msecDay = msecHour * 24;
 
-            var day = Math.floor(this.deltaTime / msecDay);
-            this.deltaTime = this.deltaTime - ( day * msecDay);
+            var day = Math.floor(numbers / msecDay);
+            numbers = numbers - ( day * msecDay);
 
-            var hour = Math.floor(this.deltaTime / msecHour);
-            this.deltaTime = this.deltaTime - (hour * msecHour);
+            var hour = Math.floor(numbers / msecHour);
+            numbers = numbers - (hour * msecHour);
 
-            var min = Math.floor(this.deltaTime / msecMinute);
-            this.deltaTime = this.deltaTime - ( min * msecMinute);
+            var min = Math.floor(numbers / msecMinute);
+            numbers = numbers - ( min * msecMinute);
 
-            var sec = Math.floor(this.deltaTime / 1000);
+            var sec = Math.floor(numbers / 1000);
 
-            this.deltaTime = this.deltaTime - sec * 1000;
+            numbers = numbers - sec * 1000;
 
-            var msec = Math.floor(this.deltaTime);
+            var msec = Math.floor(numbers);
 
             if (min < 10) {
                 min = '0' + min;
