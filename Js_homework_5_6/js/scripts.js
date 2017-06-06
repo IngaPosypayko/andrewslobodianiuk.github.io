@@ -35,34 +35,27 @@ var Timer = function () {
 
     };
 
-    this.flag = 0;
+    this.flag = false;
     this.deltaTime = null;
     this.timePause = 0;
 
     this.startTimer = function () {
         switch (this.flag) {
-            case 0:
-                this.startTime = new Date();
+            case false:
+                this.startTime = +new Date();
                 this.updateTimeString = setInterval(this.timerString.bind (this), 1);
                 document.querySelector('button').innerHTML = 'Пауза';
-                this.flag = 1;
+                this.flag = true;
                 break;
 
-            case 1:
+            case true:
                 clearInterval(this.updateTimeString);
                 document.querySelector('button').innerHTML = 'Продолжить';
                 this.timePause = this.deltaTime;
-                console.log(this.deltaTime);
-                this.flag = 2;
+
+                this.flag = false;
                 break;
 
-            case 2:
-                this.startTime = +new Date();
-                this.updateTimeString = setInterval(this.timerString.bind (this), 1);
-                console.log(this.deltaTime);
-                this.flag = 1;
-                document.querySelector('button').innerHTML = 'Пауза';
-                break;
         }
 
     };
@@ -73,7 +66,7 @@ var Timer = function () {
         document.getElementById('timer').innerHTML = '00:00:00:00:000';
         document.querySelector('button').innerHTML = 'Старт';
         this.timePause = 0;
-        this.flag = 0;
+        this.flag = false;
 
     };
 
