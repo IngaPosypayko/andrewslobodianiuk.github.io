@@ -57,7 +57,6 @@ var Timer = function () {
                 break;
 
             case 2:
-                // данная дата больше по милисикундам чем дата с this.timePause +new Date() и получаеться что ломаеться логика так как получаеться 90 - 100 = -10 и минус 10 передаеться в тамстринг
                 this.startTime = +new Date();
                 this.updateTimeString = setInterval(this.timerString.bind (this), 1);
                 console.log(this.deltaTime);
