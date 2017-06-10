@@ -21,9 +21,6 @@ $li.on('click', function () {
 
 });
 
-
-
-
 $links.on('focus',function () {
 
     currentLinks = $(this);
