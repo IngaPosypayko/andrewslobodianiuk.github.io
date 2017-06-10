@@ -11,7 +11,7 @@ var $li = $('li'),
 $p.hide().first().show();
 
 
-$li.on('click', function () {
+$li.on('focusin', function () {
 
     currentLi = $(this);
 
