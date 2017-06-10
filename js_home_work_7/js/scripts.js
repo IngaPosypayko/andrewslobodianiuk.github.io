@@ -8,16 +8,10 @@ var $li = $('li'),
     currentLi,
     currentLinks;
 
-
-
-console.log($li);
-
-
 $p.hide().first().show();
-$li.first().addClass('active');
 
 
-$li.on('focus', function () {
+$li.on('click', function () {
 
     currentLi = $(this);
 
@@ -28,16 +22,17 @@ $li.on('focus', function () {
 });
 
 
-$links.on ('focus',function () {
 
-    currentLinks = $ (this);
+
+$links.on('focus',function () {
+
+    currentLinks = $(this);
 
     textId = currentLinks.attr ('href');
 
     $p.hide();
 
-    $ (textId).show();
-
+    $(textId).show();
 
 } );
 

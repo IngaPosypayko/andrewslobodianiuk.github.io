@@ -1,4 +1,7 @@
 .container {
   max-width: 50%; }
 
+.active {
+  color: red; }
+
 /*# sourceMappingURL=stylesheet.css.map */
