@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/stylesheet.css" rel="stylesheet">
+    <script rel="text/javascript" src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
 
 <div class="wrapper">
     <div class="container">
-        <form action="">
-            <label>Введите логин<input type="text"> </label>
-            <label>Введите пароль<input type="text"> </label>
-            <label>Введите пароль еще раз <input type="text"> </label>
-
+        <div class="container_hint">
+            <p class="login_hint">Введите логин</p>
+            <p class="pass_hint">Введите пароль</p>
+            <p class="pass_confirm_hint">Введите пароль еще раз</p>
+        </div>
+        <form>
+            <label class="login">Логин<input type="text"> </label>
+            <label class="pass">Пароль<input type="text"> </label>
+            <label class="pass_confirm">Введите пароль еще раз <input type="text"> </label>
         </form>
         <input type="submit">
     </div>

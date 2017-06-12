@@ -1,10 +1,25 @@
+
 label {
-  display: block; }
+    display: block;
+}
+
 
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-/*# sourceMappingURL=stylesheet.css.map */
+.container_hint {
+    position: relative;
+    left: 425px;
+    top:70px;
+}
+
+
+.container_hint p {
+    margin: 8px 0 0 0;
+
+
+}
