@@ -3,23 +3,18 @@
 
 $('tooltip').css('opacity', '0');
 
-
-
 $('[data-tooltip]').mousemove (function () {
 
-    var $dataTooltip = $(this).attr('data-tooltip');
+     var $dataTooltip = $(this).attr('data-tooltip');
 
-    var $inputPosition = $(this).position();
+     var $inputPosition = $(this).position();
 
-    console.log($inputPosition);
-
-
-
-    $('.tooltip').text($dataTooltip).css({
-        'opacity': 1,
-        'left': 260,
-        'top': 0
-    });
+        $('.tooltip').text($dataTooltip).css(
+            {
+                'opacity': 1,
+                'left': $inputPosition.left+180,
+                'top': $inputPosition.top+5
+            });
 
 
 })
@@ -30,6 +25,18 @@ $('[data-tooltip]').mousemove (function () {
         });
 
     });
+
+
+$('.submit').on('click', function () {
+    $('.tooltip').css(
+        {
+            'opacity': 1
+
+        }
+    );
+
+});
+
 
 
 

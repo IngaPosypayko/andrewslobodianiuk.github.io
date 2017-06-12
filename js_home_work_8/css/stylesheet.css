@@ -21,8 +21,7 @@ label {
 }
 
 .tooltip {
-    /*position: absolute;*/
-    position: relative;
+    position: absolute;
     z-index: 9999;
 
 }
