@@ -6,9 +6,16 @@ $('tooltip').css('opacity', '0');
 
 
 
-$('.login').mousemove (function () {
+$('[data-tooltip]').mousemove (function () {
 
     var $dataTooltip = $(this).attr('data-tooltip');
+
+    var $test = $(this);
+
+
+    // console.log($('[data-tooltip]').position());
+    console.log($test.position());
+
 
 
     $('.tooltip').text($dataTooltip).css({
@@ -30,40 +37,40 @@ $('.login').mousemove (function () {
     });
 
 
-$('.pass').mousemove (function () {
-
-    var $dataTooltip = $(this).attr('data-tooltip');
-
-
-    $('.tooltip').text($dataTooltip).css({
-        'left': 460,
-        'top': 455
-    })
-
-        .show();
-})
-    .mouseout (function () {
-        $('.tooltip').hide();
-
-    });
-
-$('.pass_confirm').mousemove (function () {
-
-    var $dataTooltip = $(this).attr('data-tooltip');
-
-
-    $('.tooltip').text($dataTooltip).css({
-        'left': 460,
-        'top': 480
-
-    })
-
-        .show();
-})
-    .mouseout (function () {
-        $('.tooltip').hide();
-
-    });
+// $('.pass').mousemove (function () {
+//
+//     var $dataTooltip = $(this).attr('data-tooltip');
+//
+//
+//     $('.tooltip').text($dataTooltip).css({
+//         'left': 460,
+//         'top': 455
+//     })
+//
+//         .show();
+// })
+//     .mouseout (function () {
+//         $('.tooltip').hide();
+//
+//     });
+//
+// $('.pass_confirm').mousemove (function () {
+//
+//     var $dataTooltip = $(this).attr('data-tooltip');
+//
+//
+//     $('.tooltip').text($dataTooltip).css({
+//         'left': 460,
+//         'top': 480
+//
+//     })
+//
+//         .show();
+// })
+//     .mouseout (function () {
+//         $('.tooltip').hide();
+//
+//     });
 
 
 
