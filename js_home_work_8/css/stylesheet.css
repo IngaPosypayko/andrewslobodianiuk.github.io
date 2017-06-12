@@ -6,5 +6,15 @@ label {
   justify-content: center;
   align-items: center;
   min-height: 100vh; }
+  .wrapper .container {
+    width: 700px;
+    display: flex;
+    justify-content: space-around; }
+
+.test {
+  position: relative;
+  top: 20px;
+  left: 100px;
+  cursor: default; }
 
 /*# sourceMappingURL=stylesheet.css.map */
