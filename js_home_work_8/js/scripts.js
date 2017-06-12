@@ -1,20 +1,60 @@
 'use strict';
 
 
-var $inputs = $('.input'),
-    $p = $('p');
-
-
-$p.css('opacity', '0');
+$('tooltip').css('opacity', '0');
 
 
 
-$inputs.on('mouseover', function () {
+$('[data-tooltip]').mousemove (function () {
 
-    $p.animate({
-        'opacity': '1'
+    var $dataTooltip = $(this).attr('data-tooltip');
+
+    var $inputPosition = $(this).position();
+
+    console.log($inputPosition);
+
+
+
+    $('.tooltip').text($dataTooltip).css({
+        'opacity': 1,
+        'left': 260,
+        'top': 0
+    });
+
+
+})
+    .mouseout (function () {
+        $('.tooltip').css({
+                'opacity': 0
+
+        });
 
     });
 
 
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

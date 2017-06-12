@@ -12,13 +12,12 @@
 
 <div class="wrapper">
     <div class="container">
-        <form action="">
-            <label>Введите логин<input class="input" type="text"> </label>
-            <!--<p>Введите,пожалуйста, Ваш Логин</p>-->
-            <label>Введите пароль<input class="input" type="text"> </label>
-            <!--<p>Введите,пожалуйста, Ваш пароль</p>-->
-            <label>Введите пароль еще раз <input class="input" type="text"> </label>
-            <input type="submit">
+        <div class="tooltip">
+        </div>
+        <form>
+            <label>Имя<input  class="login" type="text" data-tooltip = "Ввведите свое имя"> </label>
+            <label>Фамилия<input  class="pass" type="text" data-tooltip = "Ввведите свою Фамилию"> </label>
+            <label>Отчество<input class="pass_confirm" type="text" data-tooltip = "Ввведите свое отчество"> </label>
         </form>
         <div class="conatiner_tooltips">
             <p>Введите,пожалуйста, еще раз Ваш пароль</p>

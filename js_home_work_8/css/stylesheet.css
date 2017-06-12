@@ -1,20 +1,33 @@
+
 label {
-  display: block; }
+    display: block;
+}
+
 
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; }
-  .wrapper .container {
-    width: 700px;
+
     display: flex;
-    justify-content: space-around; }
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
-.test {
-  position: relative;
-  top: 20px;
-  left: 100px;
-  cursor: default; }
 
-/*# sourceMappingURL=stylesheet.css.map */
+.container {
+    height: 500px;
+    width: 800px;
+
+
+}
+
+.tooltip {
+    /*position: absolute;*/
+    position: relative;
+    z-index: 9999;
+
+}
+
+
+
+
+
