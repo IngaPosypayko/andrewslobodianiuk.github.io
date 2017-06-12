@@ -11,15 +11,21 @@ label {
     min-height: 100vh;
 }
 
-.container_hint {
+
+.container {
+    height: 500px;
+    width: 800px;
+
+
+}
+
+.tooltip {
+    /*position: absolute;*/
     position: relative;
-    left: 425px;
-    top:70px;
-}
-
-
-.container_hint p {
-    margin: 8px 0 0 0;
-
+    z-index: 9999;
 
 }
+
+
+
+

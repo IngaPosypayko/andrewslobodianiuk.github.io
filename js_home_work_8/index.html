@@ -12,15 +12,12 @@
 
 <div class="wrapper">
     <div class="container">
-        <div class="container_hint">
-            <p class="login_hint">Введите логин</p>
-            <p class="pass_hint">Введите пароль</p>
-            <p class="pass_confirm_hint">Введите пароль еще раз</p>
+        <div class="tooltip">
         </div>
         <form>
-            <label class="login">Логин<input type="text"> </label>
-            <label class="pass">Пароль<input type="text"> </label>
-            <label class="pass_confirm">Введите пароль еще раз <input type="text"> </label>
+            <label>Имя<input  class="login" type="text" data-tooltip = "Ввведите свое имя"> </label>
+            <label>Фамилия<input  class="pass" type="text" data-tooltip = "Ввведите свою Фамилию"> </label>
+            <label>Отчество<input class="pass_confirm" type="text" data-tooltip = "Ввведите свое отчество"> </label>
         </form>
         <input type="submit">
     </div>
