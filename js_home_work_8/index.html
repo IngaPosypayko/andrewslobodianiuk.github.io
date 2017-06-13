@@ -12,15 +12,23 @@
 
 <div class="wrapper">
     <div class="container">
-        <div class="tooltip">
-        </div>
         <form>
-            <label>Имя<input  type="text" data-tooltip = "Ввведите свое имя"> </label>
-            <label>Фамилия<input  type="text" data-tooltip = "Ввведите свою Фамилию"> </label>
-            <label>Отчество<input type="text" data-tooltip = "Ввведите свое отчество"> </label>
-            <input class="submit" type="submit">
+            <fieldset>
+                <div>
+                    <div class="tooltip"></div>
+                    <label>Имя<input  class="input" type="text" data-tooltip = "Ввведите свое имя"> </label>
+                </div>
+                <div>
+                    <div class="tooltip"></div>
+                    <label>Фамилия<input  class="input" type="text" data-tooltip = "Ввведите свою Фамилию"> </label>
+                </div>
+                <div>
+                    <div class="tooltip"></div>
+                    <label>Отчество<input class="input" type="text" data-tooltip = "Ввведите свое отчество"> </label>
+                </div>
+            </fieldset>
         </form>
-
+        <input class="submit" type="submit">
     </div>
 </div>
 

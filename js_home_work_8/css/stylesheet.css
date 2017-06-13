@@ -3,7 +3,6 @@ label {
     display: block;
 }
 
-
 .wrapper {
 
     display: flex;
@@ -16,14 +15,16 @@ label {
 .container {
     height: 500px;
     width: 800px;
-
-
 }
 
-.tooltip {
+.tooltip,
+.onMove {
     position: absolute;
     z-index: 9999;
+}
 
+.input {
+    width: 200px;
 }
 
 

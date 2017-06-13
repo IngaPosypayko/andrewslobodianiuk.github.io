@@ -1,39 +1,31 @@
 'use strict';
 
-
-$('tooltip').css('opacity', '0');
+$('.tooltip').hide();
 
 $('[data-tooltip]').mousemove (function () {
+
+    $('div.tooltip').toggleClass('tooltip onMove');
 
      var $dataTooltip = $(this).attr('data-tooltip');
 
      var $inputPosition = $(this).position();
 
-        $('.tooltip').text($dataTooltip).css(
+        $('.onMove').text($dataTooltip).css(
             {
-                'opacity': 1,
-                'left': $inputPosition.left+180,
+                'left': $inputPosition.left+220,
                 'top': $inputPosition.top+5
-            });
-
-
+            })
+            .show();
 })
     .mouseout (function () {
-        $('.tooltip').css({
-                'opacity': 0
-
-        });
-
+        $('.onMove').hide();
     });
 
 
 $('.submit').on('click', function () {
-    $('.tooltip').css(
-        {
-            'opacity': 1
+    $('div.onMove').toggleClass('tooltip onMove');
 
-        }
-    );
+    $('.tooltip').show();
 
 });
 
