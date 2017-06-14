@@ -13,14 +13,16 @@ label {
 
 
 .container {
-    /*height: 500px;*/
-    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tooltip,
 .onMove {
     position: absolute;
     z-index: 9999;
+
 }
 
 .input {
@@ -30,8 +32,18 @@ label {
 .label {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 10px;
 }
+
+.submit {
+    width: 150px;
+    margin-top: 10px;
+}
+
+form {
+    width: 350px;
+}
+
 
 
 
