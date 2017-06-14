@@ -20,7 +20,7 @@ $('.input').mousemove (function () {
                 'left': $inputPosition.left+220,
                 'top': $inputPosition.top+5
             }).queue('fx', [])
-            .fadeIn('slow');
+            .fadeIn('fast');
 })
     .mouseout (function () {
         $('.onAction').removeClass('onAction')
@@ -34,7 +34,6 @@ $('.input').mousemove (function () {
 
 
 $('.submit').on('click', function () {
-    $('.tooltip').stop();
 
 
     $('#tooltip_1').text($('#input_1').attr('data-tooltip'))
@@ -43,14 +42,14 @@ $('.submit').on('click', function () {
                 'left': $('#input_1').position().left+220,
                 'top': $('#input_1').position().top+5
             })
-                .fadeIn('slow');
+                .fadeIn('fast');
     $('#tooltip_2').text($('#input_2').attr('data-tooltip'))
         .css(
             {
                 'left': $('#input_2').position().left+220,
                 'top': $('#input_2').position().top+5
             })
-                .fadeIn('slow');
+                .fadeIn('fast');
 
     $('#tooltip_3').text($('#input_3').attr('data-tooltip'))
         .css(
@@ -58,7 +57,7 @@ $('.submit').on('click', function () {
                 'left': $('#input_3').position().left+220,
                 'top': $('#input_3').position().top+5
             })
-                .fadeIn('slow');
+                .fadeIn('fast');
 
 });
 
