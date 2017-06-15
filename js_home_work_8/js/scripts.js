@@ -36,31 +36,24 @@ $('.input').mousemove (function () {
     });
 
 
+
+
 $('.submit').on('click', function () {
 
+    function tooltip(tooltipId, inputId) {
+        var tooltip = $(tooltipId);
+        var input = $(inputId);
+        tooltip.text(input.attr('data-tooltip'))
+            .css({
+                'left': input.position().left + 220,
+                'top': input.position().top + 5
+            })
+            .stop().fadeTo(100, 1);
+    }
+    tooltip('#tooltip_1', '#input_1');
+    tooltip('#tooltip_2', '#input_2');
+    tooltip('#tooltip_3', '#input_3');
 
-    $('#tooltip_1').text($('#input_1').attr('data-tooltip'))
-        .css(
-            {
-                'left': $('#input_1').position().left+220,
-                'top': $('#input_1').position().top+5
-            })
-        .stop().fadeTo(100, 1);
-    $('#tooltip_2').text($('#input_2').attr('data-tooltip'))
-        .css(
-            {
-                'left': $('#input_2').position().left+220,
-                'top': $('#input_2').position().top+5
-            })
-        .stop().fadeTo(100, 1);
-
-    $('#tooltip_3').text($('#input_3').attr('data-tooltip'))
-        .css(
-            {
-                'left': $('#input_3').position().left+220,
-                'top': $('#input_3').position().top+5
-            })
-        .stop().fadeTo(100, 1);
 
 });
 
