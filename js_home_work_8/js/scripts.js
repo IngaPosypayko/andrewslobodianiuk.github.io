@@ -33,7 +33,6 @@ $('.input').mousemove (function () {
                     .removeClass('onMove')
                         .addClass('tooltip');
 
-
     });
 
 
