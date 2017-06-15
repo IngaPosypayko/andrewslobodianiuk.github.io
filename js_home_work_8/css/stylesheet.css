@@ -15,20 +15,15 @@ label {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
 }
 
-.tooltip,
-.onMove {
-    position: absolute;
-    z-index: 9999;
+.tooltip {
     background-color: lightgrey;
     padding: 5px ;
     border-radius: 5px 5px 5px 5px;
     border: 0 solid #000000;
     color: #7f7f7f;
-
-
 }
 
 .input {
@@ -36,9 +31,8 @@ label {
 }
 
 .label {
-    display: flex;
-    justify-content: space-between;
     margin-top: 20px;
+
 }
 
 .submit {
@@ -46,8 +40,19 @@ label {
     margin-top: 10px;
 }
 
-form {
-    width: 350px;
+.name {
+    margin-left: 66px;
+
+}
+
+.name2 {
+    margin-left: 30px;
+
+}
+
+.name3 {
+    margin-left: 29px;
+
 }
 
 
