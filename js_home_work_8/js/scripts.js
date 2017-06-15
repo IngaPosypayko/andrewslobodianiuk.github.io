@@ -1,11 +1,15 @@
 'use strict';
 
-$('.tooltip').hide();
+$('.tooltip').css({
+    'opacity': 0
+});
 
 
 $('.input').mousemove (function () {
 
-    $('.tooltip').hide();
+    $('.tooltip').css({
+        'opacity': 0
+    });
 
     $(this).parent().addClass('onAction');
 
@@ -19,13 +23,13 @@ $('.input').mousemove (function () {
             {
                 'left': $inputPosition.left+220,
                 'top': $inputPosition.top+5
-            }).queue('fx', [])
-            .fadeIn('fast');
+            })
+            .stop().fadeTo(100, 1);
 })
     .mouseout (function () {
         $('.onAction').removeClass('onAction')
             .prev()
-                .queue('fx', []).fadeOut()
+            .stop().fadeTo(100, 0)
                     .removeClass('onMove')
                         .addClass('tooltip');
 
@@ -42,14 +46,14 @@ $('.submit').on('click', function () {
                 'left': $('#input_1').position().left+220,
                 'top': $('#input_1').position().top+5
             })
-                .fadeIn('fast');
+        .stop().fadeTo(100, 1);
     $('#tooltip_2').text($('#input_2').attr('data-tooltip'))
         .css(
             {
                 'left': $('#input_2').position().left+220,
                 'top': $('#input_2').position().top+5
             })
-                .fadeIn('fast');
+        .stop().fadeTo(100, 1);
 
     $('#tooltip_3').text($('#input_3').attr('data-tooltip'))
         .css(
@@ -57,7 +61,7 @@ $('.submit').on('click', function () {
                 'left': $('#input_3').position().left+220,
                 'top': $('#input_3').position().top+5
             })
-                .fadeIn('fast');
+        .stop().fadeTo(100, 1);
 
 });
 
