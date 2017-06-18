@@ -34,7 +34,6 @@ nav {
 
 .main_menu {
     position: relative;
-
 }
 
 .main_menu >li {
@@ -61,6 +60,7 @@ nav {
 .main_menu li a:hover ,
 .sub_menu li a:hover {
     background-color: aquamarine;
+    color: black;
 
 
 

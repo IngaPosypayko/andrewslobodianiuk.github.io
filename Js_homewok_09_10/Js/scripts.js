@@ -1,16 +1,17 @@
 'use strict';
 
 $(function () {
-
+    
     var $position;
 
     $('.main_menu>li').hover(function () {
 
-        $(this).children('ul').stop (false, true).slideDown(200);
+        $(this).children('ul').stop (false, true).slideDown(400);
 
     }, function () {
 
-        $(this).children('ul').stop (false, true).slideUp(200);
+        $(this).children('ul').stop (false, true).slideUp(1);
+
         
     });
 
@@ -23,11 +24,20 @@ $(function () {
             'left': 150,
             'top': $position.top
 
-        }).stop (false, true).slideDown(200);
+        }).stop (false, true).slideDown(400);
     }, function () {
 
-        $(this).children('ul').stop (false, true).slideUp(200);
+        $(this).children('ul').stop (false, true).slideUp(1);
 
     });
 
-})();
+
+    $('.sub_menu').prev().append(' >');
+
+
+
+});
+
+
+
+
