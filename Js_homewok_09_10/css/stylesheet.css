@@ -55,6 +55,15 @@ nav {
     align-items: center;
     text-decoration: none;
     color: white;
+
+}
+
+.main_menu li a:hover ,
+.sub_menu li a:hover {
+    background-color: aquamarine;
+
+
+
 }
 
 

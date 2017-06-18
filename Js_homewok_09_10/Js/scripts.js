@@ -18,8 +18,6 @@ $(function () {
 
         $position = $(this).position();
 
-        console.log($position);
-
         $(this).children('ul').css({
 
             'left': 150,
@@ -31,9 +29,5 @@ $(function () {
         $(this).children('ul').stop (false, true).slideUp(200);
 
     });
-    
-
-
-
 
 })();
