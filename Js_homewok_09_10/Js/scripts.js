@@ -2,6 +2,8 @@
 
 $(function () {
 
+    var $position;
+
     $('.main_menu>li').hover(function () {
 
         $(this).children('ul').stop (false, true).slideDown(200);
@@ -13,10 +15,15 @@ $(function () {
     });
 
     $('.sub_menu>li').hover(function () {
+
+        $position = $(this).position();
+
+        console.log($position);
+
         $(this).children('ul').css({
 
             'left': 150,
-            'top': 150
+            'top': $position.top
 
         }).stop (false, true).slideDown(200);
     }, function () {
