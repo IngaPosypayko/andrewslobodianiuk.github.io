@@ -45,7 +45,7 @@ $(document).ready(function () {
 
 
 
-            $('.jcarousel').jcarousel({
+            $('.jcarousel').jCarousel({
                 animation: {
                     duration: 800,
                     easing:   'linear',
@@ -58,11 +58,11 @@ $(document).ready(function () {
 
 
         $('.jcarousel-prev').click(function() {
-            $('.jcarousel').jcarousel('scroll', '-=1');
+            $('.jcarousel').jCarousel('scroll', '-=1');
         });
 
         $('.jcarousel-next').click(function() {
-            $('.jcarousel').jcarousel('scroll', '+=1');
+            $('.jcarousel').jCarousel('scroll', '+=1');
 
         });
 
