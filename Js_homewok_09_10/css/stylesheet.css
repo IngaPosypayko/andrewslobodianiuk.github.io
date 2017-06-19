@@ -1,5 +1,6 @@
 
 
+/*nav*/
 
 nav {
     height: 40px;
@@ -62,8 +63,26 @@ nav {
     background-color: aquamarine;
     color: black;
 
+}
 
+/*!*end nav*!////////////////////////////////////////////*/
 
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 640px;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
 }
 
 

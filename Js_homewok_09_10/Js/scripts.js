@@ -1,7 +1,9 @@
-'use strict';
 
-$(function () {
-    
+
+$(document).ready(function () {
+
+    'use strict';
+
     var $position;
 
     $('.main_menu>li').hover(function () {
@@ -34,6 +36,35 @@ $(function () {
 
     $('.sub_menu').prev().append(' >');
 
+});
+
+
+
+$(document).ready(function () {
+    'use strict';
+
+
+
+            $('.jcarousel').jcarousel({
+                animation: {
+                    duration: 800,
+                    easing:   'linear',
+                    complete: function() {
+                    }
+                },
+
+                rtl: true
+            });
+
+
+        $('.jcarousel-prev').click(function() {
+            $('.jcarousel').jcarousel('scroll', '-=1');
+        });
+
+        $('.jcarousel-next').click(function() {
+            $('.jcarousel').jcarousel('scroll', '+=1');
+
+        });
 
 
 });
