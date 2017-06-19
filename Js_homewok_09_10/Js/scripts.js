@@ -42,26 +42,24 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     'use strict';
-
-
-
-            $('.jcarousel').jCarousel({
+            $('.jcarousel').jcarousel({
                 animation: {
                     duration: 800,
                     easing:   'linear',
                     complete: function() {
                     }
-                },
+
+                }
 
             });
 
 
         $('.jcarousel-prev').click(function() {
-            $('.jcarousel').jCarousel('scroll', '-=1');
+            $('.jcarousel').jcarousel('scroll', '-=1');
         });
 
         $('.jcarousel-next').click(function() {
-            $('.jcarousel').jCarousel('scroll', '+=1');
+            $('.jcarousel').jcarousel('scroll', '+=1');
 
         });
 

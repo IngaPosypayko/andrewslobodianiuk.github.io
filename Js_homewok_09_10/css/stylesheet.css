@@ -1,7 +1,4 @@
 
-
-/*nav*/
-
 nav {
     height: 40px;
     width: 100%;
@@ -22,6 +19,7 @@ nav {
 .sub_menu {
     display: none;
     position: absolute;
+    z-index: 99999;
 
 }
 
@@ -65,8 +63,6 @@ nav {
 
 }
 
-/*!*end nav*!////////////////////////////////////////////*/
-
 .jcarousel {
     position: relative;
     overflow: hidden;
@@ -84,6 +80,45 @@ nav {
 .jcarousel li {
     float: left;
 }
+
+
+.jcarousel__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.jcarousel-prev,
+.jcarousel-next {
+
+    width: 150px;
+    height: 40px;
+    background-color: #0d5a8f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+
+}
+
+.jcarousel-prev:hover,
+.jcarousel-next:hover {
+    background-color: aquamarine;
+    color: black;
+}
+
+.button_navigation_container {
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
 
 
 
