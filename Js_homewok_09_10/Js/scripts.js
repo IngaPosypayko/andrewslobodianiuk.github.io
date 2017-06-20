@@ -70,6 +70,8 @@ $(document).ready(function () {
 
         $('.style').styler();
 
+        $('#new_form select').styler();
+
 
     });
 })(jQuery);
