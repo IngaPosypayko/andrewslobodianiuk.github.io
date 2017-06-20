@@ -1,8 +1,6 @@
-
+'use strict';
 
 $(document).ready(function () {
-
-    'use strict';
 
     var $position;
 
@@ -41,7 +39,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    'use strict';
+
             $('.jcarousel').jcarousel({
                 animation: {
                     duration: 800,
@@ -68,4 +66,15 @@ $(document).ready(function () {
 
 
 
+(function($) {
+    $(function() {
 
+        $('input').styler();
+
+
+
+
+
+
+    });
+})(jQuery);
