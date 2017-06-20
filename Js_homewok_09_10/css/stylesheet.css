@@ -126,5 +126,42 @@ label {
 
 
 
+.style_css {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+
+}
+
+.style_label_css {
+    cursor: pointer;
+
+}
+
+.style_label_css:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-sprite.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+
+}
+
+.style_css:checked + .style_label_css:after {
+    background-position: 0 -17px;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 

@@ -65,15 +65,10 @@ $(document).ready(function () {
 });
 
 
-
 (function($) {
     $(function() {
 
-        $('input').styler();
-
-
-
-
+        $('.style').styler();
 
 
     });
