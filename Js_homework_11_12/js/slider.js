@@ -12,7 +12,7 @@
             var pixelsOffset = 525;
             var currentLeftValue = 0;
             var elementsCount = elementsList.find('li').length;
-            var minimumOffset = -((elementsCount - 1) * pixelsOffset);
+            var minimumOffset = -((elementsCount - 2) * pixelsOffset);
             var maximumOffset = 0;
 
             leftUIEl.click(function () {

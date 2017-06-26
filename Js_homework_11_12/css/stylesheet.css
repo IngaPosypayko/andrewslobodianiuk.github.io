@@ -1,5 +1,5 @@
 .carousel-hider {
-  width: 500px;
+  width: 1025px;
   overflow: hidden;
   float: left; }
 
@@ -36,5 +36,9 @@
 
 .carousel-arrow-right {
   margin-left: 25px; }
+
+.slider_container {
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=stylesheet.css.map */
