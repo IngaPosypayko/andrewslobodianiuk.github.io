@@ -1,8 +1,28 @@
 {
-  "title": "hello"
-
-
-
-
+  "user": [
+    {
+      "userName": "Слободянюк Андрей Константинович",
+      "position": "Junior SEO Specialist",
+      "learn": [
+        {
+          "whyLearn": "есть потребности в повышении квалификации"
+        },
+        {
+          "whyLearn": "рассматриваю вариант перехода на место Junior frontend developer в своей компании"
+        }
+      ],
+      "phoneNumber": "+ 38 063 356 05 97",
+      "socialLinks": [
+        { "titleLinks": "Вконтакте",
+          "url": "https://vk.com/id5530564"
+        },
+        {
+          "titleLinks": "Фейсбук",
+          "url": "https://www.facebook.com/profile.php?id=100013283823688"
+        }
+      ],
+      "feedback": "Могу сделать Вам SEO аудит =)"
+    }
+  ]
 
 }

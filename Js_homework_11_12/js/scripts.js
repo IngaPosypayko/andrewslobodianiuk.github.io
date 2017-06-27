@@ -19,6 +19,12 @@ $.ajax({
 
 });
 
+Handlebars.registerHelper('link', function(text, url) {
+    url = Handlebars.escapeExpression(url);
+    text = Handlebars.escapeExpression(text);
+    return new Handlebars.SafeString('<p><a href="' + url + '">' + text + '</a></p>');
+});
+
 
 
 

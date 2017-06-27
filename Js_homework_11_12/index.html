@@ -30,21 +30,37 @@
     </div>
 </div>
 
-
-
-<script id="template" type="text/x-handlebars-template">
-    <div class="entry">
-        <h1>{{title}}</h1>
-    </div>
-</script>
-
-
 <div class="container"></div>
 
-
-
-
-
+<script id="template" type="text/x-handlebars-template">
+    {{#each user}}
+    <div class="fio">
+        <h1> {{userName}} </h1>
+        <img src="img/foto1.jpg" alt="мое фото">
+        <p class="p-arial">{{position}}</p>
+    </div>
+    <div class="bio">
+        <h2>Хочу учить фронтенд, потому что:</h2>
+        {{#each learn}}
+        <ul>
+            <li> {{whyLearn}}</li>
+        </ul>
+        {{/each}}
+    </div>
+    <div class="contacts">
+        <h2> Мой контактный номер телефона:</h2>
+        <p> {{phoneNumber}}</p>
+    </div>
+    <div class="social">
+        <h2>Мои профиля в социальных сетях:</h2>
+        {{#each socialLinks}}
+        {{link "Подробнее..." user.socialLinks.url}}
+        {{/each}}
+    </div>
+    <h2>Мой фидбек:</h2>
+    <p>{{feedback}}</p>
+    {{/each}}
+</script>
 <script src="js/handlebars-v4.0.10.js"></script>
 <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>

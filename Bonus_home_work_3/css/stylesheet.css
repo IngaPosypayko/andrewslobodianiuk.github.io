@@ -1,60 +1,7 @@
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
+body .wrapper {
+  width: 500px;
+  background: cadetblue; }
+  body .wrapper:hover {
+    background-color: #0d5a8f; }
 
-
-.wrapper {
-    background-color: #09090a;
-    font-family: Tahoma, sans-serif, Serif;
-    color: #e6e6e6;
-}
-
-.content {
-    background-image: url("../img/background.png");
-    width: 960px;
-    height: 883px;
-    margin: 0 auto;
-    color: white;
-}
-
-.main_content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.img_country {
-    text-align: center;
-}
-
-.img_country a {
-    display: block;
-    text-decoration: none;
-    color: #e6e6e6;
-    font-size: 15px;
-}
-
-
-.main_content img {
-    border: solid 5px gainsboro;
-
-}
-
-
-.img {
-    display: inline-block;
-    line-height: 0;
-    -webkit-box-shadow: 0 0 10px 10px red inset;
-}
-
-.img img {
-    position: relative;
-    z-index: -1;
-
-}
-
-
+/*# sourceMappingURL=stylesheet.css.map */
