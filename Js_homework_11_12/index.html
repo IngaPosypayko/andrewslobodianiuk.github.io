@@ -9,7 +9,6 @@
 </head>
 <body>
 
-
 <div class="slider_container">
     <div class="slider">
         <div class="carousel-arrow-left"><span>Влево</span></div>
@@ -30,22 +29,25 @@
     </div>
 </div>
 
-<div class="container"></div>
+<div class="container">
+    <div class="user"></div>
+</div>
 
 <script id="template" type="text/x-handlebars-template">
     {{#each user}}
     <div class="fio">
         <h1> {{userName}} </h1>
-        <img src="img/foto1.jpg" alt="мое фото">
+        {{photo photoUrl}}
         <p class="p-arial">{{position}}</p>
     </div>
     <div class="bio">
         <h2>Хочу учить фронтенд, потому что:</h2>
-        {{#each learn}}
         <ul>
+            {{#each learn}}
             <li> {{whyLearn}}</li>
+            {{/each}}
         </ul>
-        {{/each}}
+
     </div>
     <div class="contacts">
         <h2> Мой контактный номер телефона:</h2>
@@ -54,7 +56,7 @@
     <div class="social">
         <h2>Мои профиля в социальных сетях:</h2>
         {{#each socialLinks}}
-        {{link "Подробнее..." user.socialLinks.url}}
+        <p>{{titleLinks}} - {{link "Ссылка" url}}</p>
         {{/each}}
     </div>
     <h2>Мой фидбек:</h2>

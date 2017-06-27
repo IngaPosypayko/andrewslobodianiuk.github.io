@@ -2,7 +2,7 @@
 
 $.fn.slider();
 
-var container = $('.container');
+var user = $('.user');
 
 $.ajax({
     url: 'data.json'
@@ -15,14 +15,19 @@ $.ajax({
         template = Handlebars.compile(source),
         html    = template(data);
 
-    container.append(html);
+    user.append(html);
 
 });
 
 Handlebars.registerHelper('link', function(text, url) {
     url = Handlebars.escapeExpression(url);
     text = Handlebars.escapeExpression(text);
-    return new Handlebars.SafeString('<p><a href="' + url + '">' + text + '</a></p>');
+    return new Handlebars.SafeString('<a href="' + url + '">' + text + '</a>');
+});
+
+Handlebars.registerHelper('photo', function(photoUrl) {
+    photoUrl = Handlebars.escapeExpression(photoUrl);
+    return new Handlebars.SafeString('<img src="' + photoUrl + '">');
 });
 
 

@@ -56,5 +56,28 @@
   display: flex;
   justify-content: center;
 
+}
 
+
+.container {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.user,
+.fio,
+.bio,
+.contacts,
+.social {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+body {
+  background-color: #f5f6f3;
+  font:14px Myriad Pro, Serif, sans-serif;
 }
