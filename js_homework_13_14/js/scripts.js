@@ -64,21 +64,15 @@ var test = {
             },
             {
                 title: 'Выбирите числа больше 2',
-                answers: [' 1', '3'],
+                answers: ['1', '3'],
                 correctAnswers: [2]
             }
         ]
     }
 };
 
-
-
-
 test.createHtml();
 
-var numbers = [];
-_.times(5, function () {
-    numbers.push(_.random(1,100));
-});
-console.log(numbers); // ...
+
+
 
