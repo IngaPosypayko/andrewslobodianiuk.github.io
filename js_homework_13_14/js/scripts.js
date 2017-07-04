@@ -47,14 +47,15 @@ var test = {
         button.setAttribute('type', 'submit');
         button.setAttribute('value', 'Проверить мои результаты');
         button.className = 'btn btn-default';
+
     },
 
-     data: {
+    data:  {
         title: 'Тест по какой-то теме',
         questions: [
             {
                 title: 'Выбирите числа больше 5 ',
-                answers: ['10', '4', '12'],
+                answers: ['10', '4', '8'],
                 correctAnswers: [1, 3]
             },
             {
@@ -69,10 +70,53 @@ var test = {
             }
         ]
     }
+
+
+
+
 };
 
 test.createHtml();
 
+
+
+
+// var UserAnsw = [true, false, true];
+//
+//
+//     for (var i = test.data.questions[0].correctAnswers[0]; i < UserAnsw.length; i++) {
+//
+//         console.log(i);
+//
+//         if (UserAnsw[i] === true) {
+//         alert('hello');
+//
+//
+//     } else {
+//         alert('close');
+//
+//         }
+//     }
+
+
+
+
+
+// for(var i =0; i< userAnswers.length; i++) {
+//     var userAnswer = userAnswers[i];
+//     var isAnswerCorrect = isAnswerCorrect(userAnswer, listOfAnswers, listOfCorrectAnswers);
+// }
+//
+// function isAnswerCorrect(userAnswer, listOfAnswers, listOfCorrectAnswers){
+//     for(var i =0; i<listOfCorrectAnswers.length; i++){
+//         var userAnswerIndex = listOfAnswers.indexOf(userAnswer);
+//         if(userAnswerIndex == listOfCorrectAnswers[i]){
+//             return true;
+//             break;
+//         }
+//     }
+//     return false;
+// }
 
 
 
