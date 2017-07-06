@@ -80,6 +80,81 @@
 
 
 
+var data =   {
+    title: 'Тест по какой-то теме',
+        questions: [
+        {
+            title: 'Выбирите числа больше 5 ',
+            answers: ['10', '4', '8'],
+            correctAnswers: [1, 3],
+            userAnswers: []
+        },
+        {
+            title: 'Выбирите числа больше 20',
+            answers: ['22', '15', '25', '38'],
+            correctAnswers: [1, 3, 4],
+            userAnswers: []
+        },
+        {
+            title: 'Выбирите числа больше 2',
+            answers: ['1', '3'],
+            correctAnswers: [2],
+            userAnswers: []
+
+        }
+    ]
+};
+
+
+
+
+var userAnswersTEST = ['10', '8'];
+
+
+function isAnswerCorrect(userAnswer, listOfAnswers, listOfCorrectAnswers) {
+
+    function correct() {
+        var userAnswerIndex = listOfAnswers.indexOf(userAnswer);
+        userAnswerIndex = userAnswerIndex + 1;
+        return userAnswerIndex;
+    }
+
+   if (listOfCorrectAnswers.includes(correct()) === true) {
+
+
+
+   } else  {
+
+
+
+   }
+
+}
+
+function crossArr() {
+
+    for (var j = 0; j<data.questions.length; j++) {
+        for (var i = 0; i<userAnswersTEST.length; i++) {
+            isAnswerCorrect(userAnswersTEST[i], data.questions[j].answers,data.questions[j].correctAnswers );
+
+        }
+
+
+    }
+}
+
+crossArr();
+
+
+
+
+
+
+
+
+
+
+
 // var data =   {
 //     title: 'Тест по какой-то теме',
 //         questions: [
@@ -109,25 +184,13 @@
 // var newArr = [];
 //
 //
-// function isCorrect (userAnswers) {
+// function isCorrect () {
+//
+//     var userAnswer;
 //
 //     var isCorrect;
 //
-//
-//
-//     for(var i = 0; i< userAnswers.length; i++) {
-//         userAnswer = userAnswers[i];
-//         isCorrect = isAnswerCorrect(userAnswer, data.questions[0].answers,data.questions[0].correctAnswers );
-//
-//         if ( isCorrect === true) {
-//             break;
-//         } else {
-//             break;
-//         }
-//     }
-//
-//
-//
+//     isCorrect = isAnswerCorrect(userAnswer, data.questions[0].answers,data.questions[0].correctAnswers );
 //
 //     function isAnswerCorrect(userAnswer, listOfAnswers, listOfCorrectAnswers) {
 //
@@ -154,69 +217,6 @@
 //
 //
 // console.log(newArr);
-
-var data =   {
-    title: 'Тест по какой-то теме',
-        questions: [
-        {
-            title: 'Выбирите числа больше 5 ',
-            answers: ['10', '4', '8'],
-            correctAnswers: [1, 3]
-        },
-        {
-            title: 'Выбирите числа больше 20',
-            answers: ['22', '15', '25', '38'],
-            correctAnswers: [1, 3, 4]
-        },
-        {
-            title: 'Выбирите числа больше 2',
-            answers: ['1', '3'],
-            correctAnswers: [2]
-        }
-    ]
-};
-
-
-
-var userAnswer;
-var userAnswersTEST = ['10', '8'];
-
-var newArr = [];
-
-
-function isCorrect () {
-
-    var userAnswer = this;
-
-    var isCorrect;
-
-    isCorrect = isAnswerCorrect(userAnswer, data.questions[0].answers,data.questions[0].correctAnswers );
-
-    function isAnswerCorrect(userAnswer, listOfAnswers, listOfCorrectAnswers) {
-
-        for (var i = 0; i < listOfCorrectAnswers.length; i++) {
-            var userAnswerIndex = listOfAnswers.indexOf(userAnswer);
-
-            userAnswerIndex = userAnswerIndex + 1;
-
-            if (userAnswerIndex === listOfCorrectAnswers[i]) {
-                return true;
-
-            } else {
-                return false;
-            }
-        }
-    }
-
-    return isCorrect;
-
-
-}
-
-newArr.push(isCorrect(userAnswersTEST));
-
-
-console.log(newArr);
 
 
 
